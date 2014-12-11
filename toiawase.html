@@ -8,6 +8,13 @@
 <center>
 <h1>お問い合わせ</h1>
 <form method="post" action="mail.php">
+    <form method="post" action="example.cgi">
+    <p>質問のジャンルを選んでください<br>
+    <input type="radio" name="q" value="システム"> システム
+    <input type="radio" name="q" value="イベント"> イベント
+    <input type="radio" name="q" value="その他"> その他
+    </p>
+    </form>
     <table class="sample-table">
         <tr>
             <th>氏名(必須)</th>
@@ -17,13 +24,6 @@
             <th>メールアドレス</th>
             <td><input type="text" name="Email" size="40"></td>
         </tr>
-        <form method="post" action="example.cgi">
-        <p>
-        <input type="radio" name="q" value="システム"> システム
-        <input type="radio" name="q" value="イベント"> イベント
-        <input type="radio" name="q" value="その他"> その他
-        </p>
-        </form>
         <tr>
         	<th>件名(必須)</th>
         	<td><input type="text" name="件名" size="50"></td>
