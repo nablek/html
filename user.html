@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ユーザ情報</title>
+</head>
+<body>
+	<center>
+		<!-- ヘッダ部ロゴの表示 -->
+		<p class="logo">
+		<a href="top.html">
+		<img src="logo.png" alt="ロゴ" style="width:100%;height:auto;max-width:1200px;">
+		</a>
+		</p>
+		
+		<!-- あなたのをデータベースから値をとって『ユーザ名さんの』にするのもいいかも -->
+		<h1>あなたのユーザ情報</h1>
+		<table class="sample-table">
+    			<!-- ユーザ情報表示 -->
+        		<tr>
+            	<th>ユーザID</th>
+            	<!--  データベースから値を取ってね -->
+            	<td>○○○○○○○</td>
+        		</tr>
+        		
+ 				<tr>
+            	<th>ユーザ名</th>
+            	<!--  データベースから値を取ってね -->
+            	<td>××××××</td>
+				</tr>
+			
+        		<tr>
+        		<th>メールアドレス</th>
+        		<!--  データベースから値を取ってね -->
+        		<td>---------------@------.----.jp</td>
+    			</tr>
+    		</table>
+    			
+    		<!-- 編集ボタン -->
+        	
+        	<input type="button" name="編集ボタン" value="アカウント情報の編集" style="position: relative; left: 150px; top: 70px;"onclick="location.href='userhensyu.html'" >
+    		
+    			
+    		<!-- ログアウトボタン（リンクの配置場所が決まり次第変更） 
+        	<div id="mainform-submit">
+        	<input type="submit" name="ログアウトボタン" value="ログアウト">
+    		</div>
+    		-->
+	    	
+        	<!-- TOPへ戻るボタン -->
+        
+        	<input type="button" name="TOPボタン" value="TOPへ" style="position: relative; left: 150px; top: 70px;"onclick="location.href='top.html'" >
+    		
+	</center>
+</body>
+</html>
