@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="Shift_JIS">
+		<meta charset="UTF-8">
 		<title>Top : KUT-ARC</title>
 		<link rel="stylesheet" type="text/css" href="top.css">
 		<style type="text/css">
-			/* •\¦—Ìˆæ‘S‘Ì */
+			/* è¡¨ç¤ºé ˜åŸŸå…¨ä½“ */
 			div.sample div.sampletabbox { margin: 0px; padding: 0px; width: 700px; height: 800px; clear: left; }
-			/* ƒ^ƒu•”•ª */
+			/* ã‚¿ãƒ–éƒ¨åˆ† */
 			div.sample p.sampletabs { margin: 0px; padding: 0px; }
 			div.sample p.sampletabs a { display: block; width: 4em; float: left; margin: 0px 15px 0px 15px; padding: 10px; text-align: center; }
 			div.sample p.sampletabs a.sampletab1 { background-color: white; color: black; }
@@ -17,7 +17,7 @@
 			div.sample p.sampletabs a.sampletab5 { background-color: white; color: black; }
 			div.sample p.sampletabs a.sampletab6 { background-color: white; color: black; }
 			div.sample p.sampletabs a:hover { color: yellow; }
-			/* ‘Î‰•\¦—Ìˆæ */
+			/* å¯¾å¿œè¡¨ç¤ºé ˜åŸŸ */
 			div.sample div.sampletab { height: 500px; overflow: auto; clear: left; }
 			div.sample div#sampletab1 { border: 2px solid gray; background-color: white; }
 			div.sample div#sampletab2 { border: 2px solid gray; background-color: white; }
@@ -27,17 +27,17 @@
 			div.sample div#sampletab5 { border: 2px solid gray; background-color: white; }
 			div.sample div#sampletab6 { border: 2px solid gray; background-color: white; }
 			div.sample div.sampletab p { margin: 0.5em; }
-			/* ‘•üi¡‰ñ‚ÌƒeƒNƒjƒbƒN‚Æ‚Í–³ŠÖŒWj */
+			/* è£…é£¾ï¼ˆä»Šå›ã®ãƒ†ã‚¯ãƒ‹ãƒƒã‚¯ã¨ã¯ç„¡é–¢ä¿‚ï¼‰ */
 			div.sample div.sampletab ul, div.sampletab ol { margin-top: 0.5em; margin-bottom: 0.5em; }
 			div.sample div.sampletab li { line-height: 1.35; margin-bottom: 0px; margin-top: 0px; }
 			div.sample div.sampletab ul li { list-style-type: disc; }
 			div.sample div.sampletab p.tabhead { font-weight: bold; border-bottom: 3px double gray; }
-			p.sampletab1 {font-family: "‚l‚r ‚oƒSƒVƒbƒN","‚l‚r ƒSƒVƒbƒN",sans-serif;}
-			p.example2 {font-family: "‚l‚r ‚oƒSƒVƒbƒN","‚l‚r ƒSƒVƒbƒN",sans-serif;}
-			p.example3 {font-family: "‚l‚r ‚oƒSƒVƒbƒN","‚l‚r ƒSƒVƒbƒN",sans-serif;}
-			p.example4 {font-family: "‚l‚r ‚oƒSƒVƒbƒN","‚l‚r ƒSƒVƒbƒN",sans-serif;}
-			p.example5 {font-family: "‚l‚r ‚oƒSƒVƒbƒN","‚l‚r ƒSƒVƒbƒN",sans-serif;}
-			p.example6 {font-family: "‚l‚r ‚oƒSƒVƒbƒN","‚l‚r ƒSƒVƒbƒN",sans-serif;}
+			p.sampletab1 {font-family: "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯",sans-serif;}
+			p.example2 {font-family: "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯",sans-serif;}
+			p.example3 {font-family: "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯",sans-serif;}
+			p.example4 {font-family: "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯",sans-serif;}
+			p.example5 {font-family: "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯",sans-serif;}
+			p.example6 {font-family: "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯",sans-serif;}
 			
 			<!--
 			.sampletab1 {list-style:url(tatesen.png);}
@@ -51,14 +51,14 @@
 			</style>
 		<script type="text/javascript">
 		function ChangeTab(tabname) {
-			// ‘S•”Á‚·
+			// å…¨éƒ¨æ¶ˆã™
 			document.getElementById('sampletab1').style.display = 'none';
 			document.getElementById('sampletab2').style.display = 'none';
 			document.getElementById('sampletab3').style.display = 'none';
 			document.getElementById('sampletab4').style.display = 'none';
 			document.getElementById('sampletab5').style.display = 'none';
 			document.getElementById('sampletab6').style.display = 'none';
-			// w’è‰ÓŠ‚Ì‚İ•\¦
+			// æŒ‡å®šç®‡æ‰€ã®ã¿è¡¨ç¤º
 			if(tabname) {
 				document.getElementById(tabname).style.display = 'block';
 			}
@@ -68,48 +68,48 @@
 	<body>
 	
 	
-@@	<!-- ƒƒS‚Ì•\¦ -->
+ã€€ã€€	<!-- ãƒ­ã‚´ã®è¡¨ç¤º -->
 		<div align="center">
 			<p class="logo">
 				<a href="top.html">
-					<img src="logo.png" alt="ƒƒS" style="width:100%;height:150px;max-width:1200px;">
+					<img src="logo.png" alt="ãƒ­ã‚´" style="width:100%;height:150px;max-width:1200px;">
 				</a>
 			</p>
 		</div>
 		
-	<!-- ƒTƒCƒhƒo[ -->
+	<!-- ã‚µã‚¤ãƒ‰ãƒãƒ¼ -->
 	<div id="nav">
-	<!-- ŒŸõ  -->
+	<!-- æ¤œç´¢  -->
 	<div style="margin: 0.5em;">
 		<form target="_blank" method="get" action="http://search.allabout.co.jp/s.php">
-			<input type="text" title="ŒŸõ‚µ‚½‚¢“à—e‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢" name="qs" />
-			<input type="submit" value="ŒŸõ" />
+			<input type="text" title="æ¤œç´¢ã—ãŸã„å†…å®¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„" name="qs" />
+			<input type="submit" value="æ¤œç´¢" />
 			<input type="hidden" value="sjis" name="ie" />
 		</form>
 		</div>
 		<br>
 		<br>
-	<!-- ‚¨–â‚¢‡‚í‚¹ -->
+	<!-- ãŠå•ã„åˆã‚ã› -->
 	<div id="toi">
-		<img src="toiawase.png" style="width:10%; height:auto;"><a href="toiawase.html">‚¨–â‚¢‡‚í‚¹</a>
+		<img src="toiawase.png" style="width:10%; height:auto;"><a href="toiawase.html">ãŠå•ã„åˆã‚ã›</a>
 	</div>
 	<br>
 	<br>
-	<!-- ‚æ‚­‚ ‚é¿–â -->
+	<!-- ã‚ˆãã‚ã‚‹è³ªå• -->
 	<div id="situmon">
-		<img src="hatena.png" style="width:10%; height:auto;" align="center"><a href="situmon.html">‚æ‚­‚ ‚é¿–â</a>
+		<img src="hatena.png" style="width:10%; height:auto;" align="center"><a href="situmon.html">ã‚ˆãã‚ã‚‹è³ªå•</a>
 		</div>
 	</div>
 
-		<!-- ƒ^ƒu‚Ì•\¦ -->
+		<!-- ã‚¿ãƒ–ã®è¡¨ç¤º -->
 		<div id="header">
 		  <ul class="nl clearFix">
-					<li class="first"><a onclick="ChangeTab('sampletab1'); return false;" class="sampletab1"  href="#sampletab1">Z‹</a></li>
-					<li><a onclick="ChangeTab('sampletab2'); return false;" class="sampletab2" href="#sampletab2">Œö‹¤{İ</a></li>
-					<li><a onclick="ChangeTab('sampletab3'); return false;" class="sampletab3" href="#sampletab3">¶Šˆ{İ</a></li>
-					<li><a onclick="ChangeTab('sampletab4'); return false;" class="sampletab4" href="#sampletab3">‹à—Z‹@ŠÖ</a></li>
-					<li><a onclick="ChangeTab('sampletab5'); return false;" class="sampletab5" href="#sampletab3">Œğ’Ê‹@ŠÖ</a></li>
-					<li><a onclick="ChangeTab('sampletab6'); return false;" class="sampletab6" href="#sampletab3">ƒCƒxƒ“ƒg</a></li>
+					<li class="first"><a onclick="ChangeTab('sampletab1'); return false;" class="sampletab1"  href="#sampletab1">ä½å±…</a></li>
+					<li><a onclick="ChangeTab('sampletab2'); return false;" class="sampletab2" href="#sampletab2">å…¬å…±æ–½è¨­</a></li>
+					<li><a onclick="ChangeTab('sampletab3'); return false;" class="sampletab3" href="#sampletab3">ç”Ÿæ´»æ–½è¨­</a></li>
+					<li><a onclick="ChangeTab('sampletab4'); return false;" class="sampletab4" href="#sampletab3">é‡‘èæ©Ÿé–¢</a></li>
+					<li><a onclick="ChangeTab('sampletab5'); return false;" class="sampletab5" href="#sampletab3">äº¤é€šæ©Ÿé–¢</a></li>
+					<li><a onclick="ChangeTab('sampletab6'); return false;" class="sampletab6" href="#sampletab3">ã‚¤ãƒ™ãƒ³ãƒˆ</a></li>
 				</ul>
 				 <hr class="none">
 				</div>
@@ -117,33 +117,33 @@
 				<div class="sampletabbox">
 				<div class="sampletab">
 				<div class="sampletab" id="sampletab1">
-				<p class="tabhead">ƒ^ƒu1uZ‹î•ñv</p>
-				<p>XV—š—ğ‚Å‚·BV’…‡‚É10ŒÂ‚Ì‹L–‚ğĞ‰î‚µ‚Ä‚¢‚Ü‚·B</p>
+				<p class="tabhead">ã‚¿ãƒ–1ã€Œä½å±…æƒ…å ±ã€</p>
+				<p>æ›´æ–°å±¥æ­´ã§ã™ã€‚æ–°ç€é †ã«10å€‹ã®è¨˜äº‹ã‚’ç´¹ä»‹ã—ã¦ã„ã¾ã™ã€‚</p>
 				</div>
 				
 				<div class="sampletab" id="sampletab2">
-				<p class="tabhead">ƒ^ƒu2uŒö‹¤{İv</p>
+				<p class="tabhead">ã‚¿ãƒ–2ã€Œå…¬å…±æ–½è¨­ã€</p>
 				
 				<link rel="import" href="koukyou.html">
 				
 				</div>
 				<div class="sampletab" id="sampletab3">
-					<p class="tabhead">ƒ^ƒu3u¶Šˆ{İv</p>
+					<p class="tabhead">ã‚¿ãƒ–3ã€Œç”Ÿæ´»æ–½è¨­ã€</p>
 				
 				</div>
 				<div class="sampletab" id="sampletab4">
-					<p class="tabhead">ƒ^ƒu4u‹à—Z‹@ŠÖv</p>
+					<p class="tabhead">ã‚¿ãƒ–4ã€Œé‡‘èæ©Ÿé–¢ã€</p>
 				</div>
 				<div class="sampletab" id="sampletab5">
-					<p class="tabhead">ƒ^ƒu5uŒğ’Ê‹@ŠÖv</p>
+					<p class="tabhead">ã‚¿ãƒ–5ã€Œäº¤é€šæ©Ÿé–¢ã€</p>
 				
 				</div>
 				<div class="sampletab" id="sampletab6">
-					<p class="tabhead">ƒ^ƒu6uƒCƒxƒ“ƒgv</p>
+					<p class="tabhead">ã‚¿ãƒ–6ã€Œã‚¤ãƒ™ãƒ³ãƒˆã€</p>
 				
 				</div>
 				<script type="text/javascript"><!--
-				// ƒfƒtƒHƒ‹ƒg‚Ìƒ^ƒu‚ğ‘I‘ğ
+				// ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ã‚¿ãƒ–ã‚’é¸æŠ
 				ChangeTab('sampletab1');
 			// --></script>
 		</div>
