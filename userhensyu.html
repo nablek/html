@@ -5,7 +5,7 @@
 	<title>ユーザ情報変更</title>
 </head>
 <body>
-	<center>
+	<div align="center">
 		<!-- ヘッダ部ロゴの表示 -->
 		<p class="logo">
 		<a href="top.html">
@@ -18,30 +18,30 @@
 		<!-- 入力のないものに関しては現在の値を入れ込む？ -->
 		<!-- actionにはデータの送信先（プログラム）のURIを指定 -->
 		<form method="post" action="">
-    	<table class="sample-table">
+	    	<table class="sample-table">
     			<!-- ユーザID入力欄 -->
         		<tr>
-            	<th>ユーザID</th>
-            	<td><input type="char" name="user_id" size="30" placeholder="○○○○○○○" pattern="\d{1,30}"  required></td>
+        	    	<th>ユーザID</th>
+            		<td><input type="text" name="user_id" size="30" placeholder="○○○○○○○" pattern="\d{1,30}"  required></td>
         		</tr>
         		
         		<!-- ユーザ名入力欄 -->
- 				<tr>
+ 			<tr>
             		<th>ユーザ名</th>
-            		<td><input type="char" name="user_name" size="30" placeholder="××××××" pattern="\d{1,30}"  required></td>
-				</tr>
+            		<td><input type="text" name="user_name" size="30" placeholder="××××××" pattern="\d{1,30}"  required></td>
+			</tr>
 				
-				<!-- メールアドレス入力欄 -->
+			<!-- メールアドレス入力欄 -->
         		<tr>
         		<th>メールアドレス</th>
         		<td><input type="text" name="mail_address" size="50"placeholder="---------------@------.----.jp" pattern="\d{1,50}"  required></td>
     			</tr>
     			
     			<!-- パスワード入力欄 -->
-				<tr>
-				<th>パスワード</th>
-				<td><input type="password" name="password" value="" size="24"></td>
-				</tr>
+			<tr>
+			<th>パスワード</th>
+			<td><input type="password" name="password" value="" size="24"></td>
+			</tr>
     			
         	</table>
         	
@@ -49,6 +49,6 @@
         	<div id="mainform-submit">
         	<input type="submit" name="送信ボタン" value="変更を保存" style="position: relative; left: 150px; top: 70px;">
     		</div>
-	</center>
+	</div>
 </body>
 </html>
