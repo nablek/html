@@ -7,18 +7,25 @@
 <body>
 	<div align="center">
 		<h1>イベント情報更新画面</h1>
+		<!-- mail.phpはphpファイルができ次第対応するモノに変更してちょ -->
 		<form method="post" action="mail.php">
     		<table class="sample-table">
-			<!-- 見出し入力欄 -->    		
+			<!-- イベント名入力欄 -->    		
         		<tr>
-            		<th>見出し</th>
-            		<td><input type="text" name="title" size="30"></td>
+            		<th>イベント名</th>
+            		<td><input type="text" name="event_name" size="30"></td>
         		</tr>
         		
-        		<!-- 内容入力欄 -->
+        		<!-- イベント日時 -->
         		<tr>
-            		<th>内容</th>
-            		<td><textarea rows="10" cols="50" name="内容"></textarea></td>
+        		<th>イベント日時</th>
+        		<td><input type="text" name="event_date" size="15"></td>
+        		</tr>
+        		
+        		<!-- イベント内容入力欄 -->
+        		<tr>
+            		<th>イベント内容</th>
+            		<td><textarea rows="10" cols="50" name="content"></textarea></td>
         		</tr>
         	</table>
         	
