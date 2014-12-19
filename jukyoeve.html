@@ -7,18 +7,19 @@
 <body>
 	<div align="center">
 		<h1>おすすめ物件更新画面</h1>
+		<!-- mail.phpはphpファイルができ次第対応するモノに変更してちょ -->
 		<form method="post" action="mail.php">
     		<table class="sample-table">
     			<!-- 見出し入力欄 -->
         		<tr>
             		<th>見出し</th>
-            		<td><input type="text" name="title" size="30"></td>
+            		<td><input type="text" name="event_name" size="30"></td>
         		</tr>
         		
         		<!-- 場所入力欄 -->
  			<tr>
             		<th>場所(住所)</th>
-            		<td><input type="text" name="address" size="30"></td>
+            		<td><input type="text" name="event_place" size="30"></td>
 			</tr>
 			
 			<!-- 電話番号入力欄 -->
@@ -30,7 +31,7 @@
     			<!-- 内容入力欄 -->
         		<tr>
             		<th>内容</th>
-            		<td><textarea rows="10" cols="50" name="内容"></textarea></td>
+            		<td><textarea rows="10" cols="50" name="content"></textarea></td>
         		</tr>
         	</table>
         	
