@@ -1,4 +1,4 @@
-9<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -73,10 +73,10 @@
 		<img src="logo.png" alt="ロゴ" style="width:100%;height:150px;max-width:1200px;">
 		</a>
 		</p>
-		</div>
+	</div>
 		
-		<!-- サイドバー -->
-		<div id="nav">
+	<!-- サイドバー -->
+	<div id="nav">
 		<!-- 検索  -->
 		<div style="margin: 0.5em;">
 			<form target="_blank" method="get" action="http://search.allabout.co.jp/s.php">
@@ -97,38 +97,39 @@
 	
 		<!-- よくある質問 -->
 		<div id="situmon">
-			<img src="hatena.png" style="width:10%; height:auto;" align="center"><a href="situmon.html">よくある質問</a>
+		<img src="hatena.png" style="width:10%; height:auto;" align="center"><a href="situmon.html">よくある質問</a>
 		</div>
+	</div>
 		
 		<h1>ユーザ情報変更</h1>
 		<!-- データベースから値を取得してフォーラムに現在の情報を表示したいっす -->
 		<!-- 入力のないものに関しては現在の値を入れ込む？ -->
 		<!-- actionにはデータの送信先（プログラム）のURIを指定 -->
 		<form method="post" action="">
-	    	<div id="header">
+	    	<div >
     			<!-- ユーザID入力欄 -->
         		<tr>
-        	    	<th>ユーザID</th>
-            		<td><input type="text" name="user_id" size="30" placeholder="○○○○○○○" pattern="\d{1,30}"  required></td>
+        	    <th>ユーザID</th>
+            	<td><input type="text" name="user_id" size="30" placeholder="○○○○○○○" pattern="\d{1,30}"  required></td><br>
         		</tr>
         		
         		<!-- ユーザ名入力欄 -->
- 			<tr>
-            		<th>ユーザ名</th>
-            		<td><input type="text" name="user_name" size="30" placeholder="××××××" pattern="\d{1,30}"  required></td>
-			</tr>
+ 				<tr>
+            	<th>ユーザ名</th>
+            	<td><input type="text" name="user_name" size="30" placeholder="××××××" pattern="\d{1,30}"  required></td><br>
+				</tr>
 				
-			<!-- メールアドレス入力欄 -->
+				<!-- メールアドレス入力欄 -->
         		<tr>
         		<th>メールアドレス</th>
-        		<td><input type="text" name="mail_address" size="50"placeholder="---------------@------.----.jp" pattern="\d{1,50}"  required></td>
+        		<td><input type="text" name="mail_address" size="50"placeholder="---------------@------.----.jp" pattern="\d{1,50}"  required></td><br>
     			</tr>
     			
     			<!-- パスワード入力欄 -->
-			<tr>
-			<th>パスワード</th>
-			<td><input type="password" name="password" value="" size="24"></td>
-			</tr>
+				<tr>
+				<th>パスワード</th>
+				<td><input type="password" name="password" value="" size="24"></td><br>
+				</tr>
     			
         	</div>
         	
