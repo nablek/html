@@ -9,24 +9,25 @@
 <body>
 	<div align="center">
 		<h1>イベント情報更新画面</h1>
+		<!-- mail.phpはphpファイルができ次第対応するモノに変更してちょ -->
 		<form method="post" action="mail.php">
     		<table class="sample-table">
     			<!-- 主催者名入力欄 -->
         		<tr>
             		<th>主催者名</th>
-            		<td><input type="text" name="title" size="50"></td>
+            		<td><input type="text" name="sponsor_name" size="50"></td>
         		</tr>
         		
         		<!-- メールアドレス入力欄 -->
         		<tr>
             		<th>メールアドレス</th>
-            		<td><input type="text" name="title" size="50"></td>
+            		<td><input type="text" name="mailaddress" size="50"></td>
         		</tr>
         		
         		<!-- イベント名入力欄 -->
         		<tr>
             		<th>イベント名</th>
-            		<td><input type="text" name="title" size="50"></td>
+            		<td><input type="text" name="event_name" size="50"></td>
         		</tr>
         	</table>
         	
@@ -89,16 +90,16 @@
 	</form>
 	
         <table>
-        	<!-- 場所入力欄 -->
+        	<!-- イベント場所入力欄 -->
         	<tr>
-        	<th>場所</th>
-            	<td><input type="text" name="title" size="50"></td>
+        	<th>イベント場所</th>
+            	<td><input type="text" name="event_place" size="50"></td>
         	</tr>
         	
-        	<!-- 内容入力欄 -->
+        	<!-- イベント内容入力欄 -->
         	<tr>
-            	<th>内容</th>
-            	<td><textarea rows="10" cols="50" name="内容"></textarea></td>
+            	<th>イベント内容</th>
+            	<td><textarea rows="10" cols="50" name="event_content"></textarea></td>
         	</tr>
         </table>
         
