@@ -3,16 +3,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
 <meta http-equiv="Content-Style-Type" content="text/css">
-<title>ページが見つかりません</title>
+<title>エラー</title>
 </head>
 <body>
-<center>
-	<h3>指定されたページが見つかりませんでした。</h3>
-    <h4>Error Code 404(HTTP_NOT_FOUND)</h4>
-    <p>ページが削除されたか、リンク切れの可能性があります。<br>
-    または、入力したアドレスに間違いがある可能性があります。</p></center>
-    <center>恐れ入りますが、下記のメールでご連絡下さい。
-    <address><a href="mailto:webmaster@kajuhome.com">webmaster@kajuhome.com</a></address>
-    </center>
+  <div align="center">
+    <h3>エラーが発生しました。</h3>
+    <p>
+    お手数ですがもう一度やり直してください。
+    </p>
+
+    <!-- 前のページに戻るボタン -->
+    <input type="button" Value="戻る" onClick="history.go(-1);">
+
+    <!-- TOPへ戻るボタン -->
+    <input type="button" name="TOPボタン" value="TOPへ" onclick="location.href='top.html'" >
+    </div>
 </body>
 </html>
