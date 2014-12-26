@@ -16,40 +16,52 @@ function ChangeTab(tabname) {
 }
 // -->
 </script>
+
+<!-- 画像の位置を調整(相対位置指定) -->
+<STYLE type="text/css">
+.tp {
+	position: relative;
+	bottom: 60px;
+
+}
+</STYLE>
 </head>
 <body>
-
+<!-- タブ部分 -->
 <div class="tabbox">
    <p class="tabs">
       <a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false;">郵便局</a>
       <a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); return false;">銀行</a>
    </p>
    <div id="tab1" class="tab">
-      <p><!-- ここに中身を記述 -->
-   <ul>
+      <p><!-- ここに郵便局の中身を記述 -->
+  	<ul style="border:1px solid black; width:600px; height:250px;">
+  	<h2>郵便局土佐山田支店</h2>
+  	<img src="tosapost.jpg"alt="写真"class="tp"width="240px"height="180px"align="right"hspace="50px" >
   	<li style="list-style:url(home78.png)">〒111-111 土佐山田</li>
   	<li style="list-style:url(old20.png)">000-000</li>
   	<li style="list-style:url(wall7.png)">窓口 9:00～18:00<br>ATM 9:00～18:00</li>
-  	
-</ul>
-    
+  	<br>
+  	<li style="list-style:none">備考　</li>
+	</ul>
    </div>
+   
    <div id="tab2" class="tab">
-      <p><!-- ここに中身を記述 -->
-      </p>
+      <p><!-- ここに銀行の中身を記述 -->
+      <ul style="border:1px solid black; width:600px; height:250px;">
+  	<h2>郵便局土佐山田支店</h2>
+  	<li style="list-style:url(home78.png)">〒111-111 土佐山田</li>
+  	<li style="list-style:url(old20.png)">000-000</li>
+  	<li style="list-style:url(wall7.png)">窓口 9:00～18:00<br>ATM 9:00～18:00</li>
+  	<br>
+  	<li style="list-style:none">備考　土佐山田駅から徒歩○分</li>
+  		</ul>
    </div>
 
 </div>
 
-<div id="sample1">
-<ul>
-  	<li style="list-style:url(home78.png)">〒111-111 土佐山田</li>
-  	<li style="list-style:url(old20.png)">000-000</li>
-  	<li style="list-style:url(wall7.png)">窓口 9:00～18:00<br>ATM 9:00～18:00</li>
-  	
-</ul></div>
-    
-
+	
+  		
 <script type="text/javascript"><!--
   // デフォルトのタブを選択
   ChangeTab('tab1');
