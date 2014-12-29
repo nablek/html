@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="Shift_JIS">
-<title>���Z�@�֏��</title>
+<meta charset="UTF-8">
+<title>金融機関情報</title>
 <link rel="stylesheet" type="text/css" href="money.css">
 <script type="text/javascript">
 <!--
 function ChangeTab(tabname) {
-   // �S������
+   // 全部消す
    document.getElementById('tab1').style.display = 'none';
    document.getElementById('tab2').style.display = 'none';
-   
-   // �w��ӏ��̂ݕ\��
+
+   // 指定箇所のみ表示
    document.getElementById(tabname).style.display = 'block';
 }
 // -->
 </script>
 
-<!-- �摜�̈ʒu�𒲐�(���Έʒu�w��) -->
+<!-- 画像の位置を調整(相対位置指定) -->
 <STYLE type="text/css">
 .tp {
 	position: relative;
@@ -27,43 +27,43 @@ function ChangeTab(tabname) {
 </STYLE>
 </head>
 <body>
-<!-- �^�u���� -->
+<!-- タブ部分 -->
 <div class="tabbox">
    <p class="tabs">
-      <a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false;">�X�֋�</a>
-      <a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); return false;">��s</a>
+      <a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false;">郵便局</a>
+      <a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); return false;">銀行</a>
    </p>
    <div id="tab1" class="tab">
-      <p><!-- �����ɗX�֋ǂ̒��g���L�q -->
+      <p><!-- ここに郵便局の中身を記述 -->
   	<ul style="border:1px solid black; width:600px; height:250px;">
-  	<h2>�X�֋Ǔy���R�c�x�X</h2>
-  	<img src="tosapost.jpg"alt="�ʐ^"class="tp"width="240px"height="180px"align="right"hspace="50px" >
-  	<li style="list-style:url(home78.png)">��111-111 �y���R�c</li>
+  	<h2>郵便局土佐山田支店</h2>
+  	<img src="tosapost.jpg"alt="写真"class="tp"width="240px"height="180px"align="right"hspace="50px" >
+  	<li style="list-style:url(home78.png)">〒111-111 土佐山田</li>
   	<li style="list-style:url(old20.png)">000-000</li>
-  	<li style="list-style:url(wall7.png)">���� 9:00�`18:00<br>ATM 9:00�`18:00</li>
+  	<li style="list-style:url(wall7.png)">窓口 9:00〜18:00<br>ATM 9:00〜18:00</li>
   	<br>
-  	<li style="list-style:none">���l�@</li>
+  	<li style="list-style:none">備考　</li>
 	</ul>
    </div>
-   
+
    <div id="tab2" class="tab">
-      <p><!-- �����ɋ�s�̒��g���L�q -->
+      <p><!-- ここに銀行の中身を記述 -->
       <ul style="border:1px solid black; width:600px; height:250px;">
-  	<h2>�X�֋Ǔy���R�c�x�X</h2>
-  	<li style="list-style:url(home78.png)">��111-111 �y���R�c</li>
+  	<h2>郵便局土佐山田支店</h2>
+  	<li style="list-style:url(home78.png)">〒111-111 土佐山田</li>
   	<li style="list-style:url(old20.png)">000-000</li>
-  	<li style="list-style:url(wall7.png)">���� 9:00�`18:00<br>ATM 9:00�`18:00</li>
+  	<li style="list-style:url(wall7.png)">窓口 9:00〜18:00<br>ATM 9:00〜18:00</li>
   	<br>
-  	<li style="list-style:none">���l�@�y���R�c�w����k������</li>
+  	<li style="list-style:none">備考　土佐山田駅から徒歩○分</li>
   		</ul>
    </div>
 
 </div>
 
-	
-  		
+
+
 <script type="text/javascript"><!--
-  // �f�t�H���g�̃^�u��I��
+  // デフォルトのタブを選択
   ChangeTab('tab1');
 // --></script>
 
