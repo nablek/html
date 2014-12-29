@@ -23,7 +23,7 @@
 		div.sample div#sampletab2 { border: 2px solid gray; background-color: white; }
 		div.sample div#sampletab3 { border: 2px solid gray; background-color: white; }
 		div.sample div#sampletab4 { border: 2px solid gray; background-color: white; }
-			
+
 		div.sample div#sampletab5 { border: 2px solid gray; background-color: white; }
 		div.sample div#sampletab6 { border: 2px solid gray; background-color: white; }
 		div.sample div.sampletab p { margin: 0.5em; }
@@ -38,7 +38,7 @@
 		p.example4 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
 		p.example5 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
 		p.example6 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
-			
+
 		<!--
 		.sampletab1 {list-style:url(tatesen.png);}
 		.sampletab2 {list-style:url(tatesen.png);}
@@ -46,8 +46,8 @@
 		.sampletab4 {list-style:url(tatesen.png);}
 		.sampletab5 {list-style:url(tatesen.png);}
 		.sampletab6 {list-style:url(tatesen.png);}
-		-->	
-			
+		-->
+
 		</style>
 	<script type="text/javascript">
 	function ChangeTab(tabname) {
@@ -62,78 +62,91 @@
 		if(tabname) {
 			document.getElementById(tabname).style.display = 'block';
 		}
-	}	
+	}
 	</script>
 </head>
 <body>
-	<!-- ロゴの表示 -->
-	<div align="center">
-		<p class="logo">
-		<a href="top.html">
-		<img src="logo.png" alt="ロゴ" style="width:100%;height:150px;max-width:1200px;">
-		</a>
-		</p>
+	<div id="container">
+		<!-- ヘッダ開始 -->
+		<div id="header">
+			<div align="right">
+				<!-- phpにてログイン状態によりどちらかを表示 -->
+				<a href="login.html"><u>ログイン</u></a>
+				<a href="logout.html"><u>ログアウト</u></a>
+			</div>
+			<!-- ロゴの表示 -->
+			<a href="top.html">
+				<img src="logo.png" alt="ロゴ" style="width:100%;height:150px;max-width:1200px;">
+			</a>
 		</div>
-		
+
 		<!-- サイドバー -->
 		<div id="nav">
 			<!-- 検索  -->
 			<div style="margin: 0.5em;">
 				<form target="_blank" method="get" action="http://search.allabout.co.jp/s.php">
-				<input type="text" title="検索したい内容を入力してください" name="qs" />
-				<input type="submit" value="検索" />
-				<input type="hidden" value="sjis" name="ie" />
+					<input type="text" title="検索したい内容を入力してください" name="qs" />
+					<input type="submit" value="検索" />
+					<input type="hidden" value="sjis" name="ie" />
 				</form>
 			</div>
 			<br>
 			<br>
-	
+
 			<!-- お問い合わせ -->
 			<div id="toi">
 				<img src="toiawase.png" style="width:10%; height:auto;"><a href="toiawase.html">お問い合わせ</a>
 			</div>
 			<br>
 			<br>
-	
+
 			<!-- よくある質問 -->
-			<div id="situmon">
-				<img src="hatena.png" style="width:10%; height:auto;" align="center"><a href="situmon.html">よくある質問</a>
+			<div id="shitsumon">
+				<img src="hatena.png" style="width:10%; height:auto;" align="center"><a href="shitsumon.html">よくある質問</a>
+			</div>
+			<br>
+			<br>
+
+			<!-- ユーザ情報 -->
+			<div id="user">
+			<img src="user.png" style="width:10%; height:auto;" align="center"><a href="user.html">ユーザ情報</a>
+			</div>
+			<br>
+			<br>
+
+			<!-- フローチャート -->
+			<div id="flowchart">
+			合格から入学までの流れ
+			<br>
+			<!-- フローチャートの画像を入れてね
+			<img src=".png" align="center">
+		 	-->
 			</div>
 		</div>
-					
+
 		<div align="center">
-		<!-- あなたのをデータベースから値をとって『ユーザ名さんの』にするのもいいかも -->
-		<h1>あなたのユーザ情報</h1>   		
+			<!-- あなたのをデータベースから値をとって『ユーザ名さんの』にするのもいいかも -->
+			<h1>あなたのユーザ情報</h1>
     			<!-- ユーザ情報表示 -->
-        		<tr>
-            		<th>ユーザID</th>
-            		<!--  データベースから値を取ってね -->
-            		<td>○○○○○○○</td>
-        		</tr>
-        		
- 			<tr>
-            		<th>ユーザ名</th>
-            		<!--  データベースから値を取ってね -->
-            		<td>××××××</td>
-			</tr>
-			
-        		<tr>
-        		<th>メールアドレス</th>
         		<!--  データベースから値を取ってね -->
-        		<td>---------------@------.----.jp</td>
-    			</tr>
-    		</div>
-    			
+            	ユーザID:○○○○○○○<br>
+            	ユーザ名:××××××<br>
+        		メールアドレス:---------------@------.----.jp
+    	</div>
+
+		<div align="center">
     		<!-- 編集ボタン -->
-        	<input type="button" name="編集ボタン" value="アカウント情報の編集" style="position: relative; left: 150px; top: 70px;"onclick="location.href='userhensyu.html'" >
-    		
-    		<!-- ログアウトボタン（リンクの配置場所が決まり次第変更） -->
+        	<input type="button" name="編集ボタン" value="アカウント情報の編集" onclick="location.href='userhensyu.html'" >
+
+    		<!-- ログアウトボタン-->
+    		<!-- phpにてログアウト処理をおなしゃす -->
         	<div id="mainform-submit">
-        	<input type="submit" name="ログアウトボタン" value="ログアウト"style="position: relative; left: 150px; top: 70px;">
+        	<input type="submit" name="ログアウトボタン" value="ログアウト">
     		</div>
-	    	
+
         	<!-- TOPへ戻るボタン -->
-        	<input type="button" name="TOPボタン" value="TOPへ" style="position: relative; left: 150px; top: 70px;"onclick="location.href='top.html'" >
+        	<input type="button" name="TOPボタン" value="TOPへ" onclick="location.href='top.html'">
+        </div>
 	</div>
 </body>
 </html>

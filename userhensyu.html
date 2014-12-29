@@ -23,7 +23,7 @@
 		div.sample div#sampletab2 { border: 2px solid gray; background-color: white; }
 		div.sample div#sampletab3 { border: 2px solid gray; background-color: white; }
 		div.sample div#sampletab4 { border: 2px solid gray; background-color: white; }
-			
+
 		div.sample div#sampletab5 { border: 2px solid gray; background-color: white; }
 		div.sample div#sampletab6 { border: 2px solid gray; background-color: white; }
 		div.sample div.sampletab p { margin: 0.5em; }
@@ -38,7 +38,7 @@
 		p.example4 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
 		p.example5 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
 		p.example6 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
-			
+
 		<!--
 		.sampletab1 {list-style:url(tatesen.png);}
 		.sampletab2 {list-style:url(tatesen.png);}
@@ -46,8 +46,8 @@
 		.sampletab4 {list-style:url(tatesen.png);}
 		.sampletab5 {list-style:url(tatesen.png);}
 		.sampletab6 {list-style:url(tatesen.png);}
-		-->	
-			
+		-->
+
 	</style>
 	<script type="text/javascript">
 	function ChangeTab(tabname) {
@@ -62,7 +62,7 @@
 		if(tabname) {
 			document.getElementById(tabname).style.display = 'block';
 		}
-	}	
+	}
 	</script>
 </head>
 <body>
@@ -74,33 +74,52 @@
 		</a>
 		</p>
 	</div>
-		
+
 	<!-- サイドバー -->
-	<div id="nav">
-		<!-- 検索  -->
-		<div style="margin: 0.5em;">
-			<form target="_blank" method="get" action="http://search.allabout.co.jp/s.php">
-			<input type="text" title="検索したい内容を入力してください" name="qs" />
-			<input type="submit" value="検索" />
-			<input type="hidden" value="sjis" name="ie" />
-			</form>
+		<div id="nav">
+			<!-- 検索  -->
+			<div style="margin: 0.5em;">
+				<form target="_blank" method="get" action="http://search.allabout.co.jp/s.php">
+					<input type="text" title="検索したい内容を入力してください" name="qs" />
+					<input type="submit" value="検索" />
+					<input type="hidden" value="sjis" name="ie" />
+				</form>
+			</div>
+			<br>
+			<br>
+
+			<!-- お問い合わせ -->
+			<div id="toi">
+				<img src="toiawase.png" style="width:10%; height:auto;"><a href="toiawase.html">お問い合わせ</a>
+			</div>
+			<br>
+			<br>
+
+			<!-- よくある質問 -->
+			<div id="shitsumon">
+				<img src="hatena.png" style="width:10%; height:auto;" align="center"><a href="shitsumon.html">よくある質問</a>
+			</div>
+			<br>
+			<br>
+
+			<!-- ユーザ情報 -->
+			<div id="user">
+			<img src="user.png" style="width:10%; height:auto;" align="center"><a href="user.html">ユーザ情報</a>
+			</div>
+			<br>
+			<br>
+
+			<!-- フローチャート -->
+			<div id="flowchart">
+			合格から入学までの流れ
+			<br>
+			<!-- フローチャートの画像を入れてね
+			<img src=".png" align="center">
+			 -->
+			</div>
 		</div>
-		<br>
-		<br>
-	
-		<!-- お問い合わせ -->
-		<div id="toi">
-			<img src="toiawase.png" style="width:10%; height:auto;"><a href="toiawase.html">お問い合わせ</a>
-		</div>
-		<br>
-		<br>
-	
-		<!-- よくある質問 -->
-		<div id="situmon">
-		<img src="hatena.png" style="width:10%; height:auto;" align="center"><a href="situmon.html">よくある質問</a>
-		</div>
-	</div>
-		
+<!-- ナビゲーション終了 -->
+	<div align= "center">
 		<h1>ユーザ情報変更</h1>
 		<!-- データベースから値を取得してフォーラムに現在の情報を表示したいっす -->
 		<!-- 入力のないものに関しては現在の値を入れ込む？ -->
@@ -112,30 +131,30 @@
         	    <th>ユーザID</th>
             	<td><input type="text" name="user_id" size="30" placeholder="○○○○○○○" pattern="\d{1,30}"  required></td><br>
         		</tr>
-        		
+
         		<!-- ユーザ名入力欄 -->
  				<tr>
             	<th>ユーザ名</th>
             	<td><input type="text" name="user_name" size="30" placeholder="××××××" pattern="\d{1,30}"  required></td><br>
 				</tr>
-				
+
 				<!-- メールアドレス入力欄 -->
         		<tr>
         		<th>メールアドレス</th>
         		<td><input type="text" name="mail_address" size="50"placeholder="---------------@------.----.jp" pattern="\d{1,50}"  required></td><br>
     			</tr>
-    			
+
     			<!-- パスワード入力欄 -->
 				<tr>
 				<th>パスワード</th>
 				<td><input type="password" name="password" value="" size="24"></td><br>
 				</tr>
-    			
+
         	</div>
-        	
+
         	<!-- 送信ボタン -->
         	<div id="mainform-submit">
-        	<input type="submit" name="送信ボタン" value="変更を保存" style="position: relative; left: 150px; top: 70px;">
+        	<input type="submit" name="送信ボタン" value="変更を保存" >
     		</div>
 	</div>
 </body>
