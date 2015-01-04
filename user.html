@@ -5,82 +5,89 @@
 	<title>ユーザ情報</title>
 	<link rel="stylesheet" type="text/css" href="top.css">
 	<style type="text/css">
-		/* 表示領域全体 */
-		div.sample div.sampletabbox { margin: 0px; padding: 0px; width: 700px; height: 800px; clear: left; }
-		/* タブ部分 */
-		div.sample p.sampletabs { margin: 0px; padding: 0px; }
-		div.sample p.sampletabs a { display: block; width: 4em; float: left; margin: 0px 15px 0px 15px; padding: 10px; text-align: center; }
-		div.sample p.sampletabs a.sampletab1 { background-color: white; color: black; }
-		div.sample p.sampletabs a.sampletab2 { background-color: white; color: black; }
-		div.sample p.sampletabs a.sampletab3 { background-color: white; color: black; }
-		div.sample p.sampletabs a.sampletab4 { background-color: white; color: black; }
-		div.sample p.sampletabs a.sampletab5 { background-color: white; color: black; }
-		div.sample p.sampletabs a.sampletab6 { background-color: white; color: black; }
-		div.sample p.sampletabs a:hover { color: yellow; }
-		/* 対応表示領域 */
-		div.sample div.sampletab { height: 500px; overflow: auto; clear: left; }
-		div.sample div#sampletab1 { border: 2px solid gray; background-color: white; }
-		div.sample div#sampletab2 { border: 2px solid gray; background-color: white; }
-		div.sample div#sampletab3 { border: 2px solid gray; background-color: white; }
-		div.sample div#sampletab4 { border: 2px solid gray; background-color: white; }
+			/* 表示領域全体 */
+			div.sample div.sampletabbox { margin: 0px; padding: 0px; width: 1200px; height: 800px; clear: left; }
+			/* タブ部分 */
+			div.sample p.sampletabs { margin: 0px; padding: 0px; }
+			div.sample p.sampletabs a { display: block; width: 4em; float: left; margin: 0px 15px 0px 15px; padding: 10px; text-align: center; }
+			div.sample p.sampletabs a.sampletab1 { background-color: white; color: black; }
+			div.sample p.sampletabs a.sampletab2 { background-color: white; color: black; }
+			div.sample p.sampletabs a.sampletab3 { background-color: white; color: black; }
+			div.sample p.sampletabs a.sampletab4 { background-color: white; color: black; }
+			div.sample p.sampletabs a.sampletab5 { background-color: white; color: black; }
+			div.sample p.sampletabs a.sampletab6 { background-color: white; color: black; }
+			div.sample p.sampletabs a:hover { color: yellow; }
+			/* 対応表示領域 */
+			div.sample div.sampletab { height: 500px; overflow: auto; clear: left; }
+			div.sample div#sampletab1 { border: 2px solid gray; background-color: white; }
+			div.sample div#sampletab2 { border: 2px solid gray; background-color: white; }
+			div.sample div#sampletab3 { border: 2px solid gray; background-color: white; }
+			div.sample div#sampletab4 { border: 2px solid gray; background-color: white; }
 
-		div.sample div#sampletab5 { border: 2px solid gray; background-color: white; }
-		div.sample div#sampletab6 { border: 2px solid gray; background-color: white; }
-		div.sample div.sampletab p { margin: 0.5em; }
-		/* 装飾（今回のテクニックとは無関係） */
-		div.sample div.sampletab ul, div.sampletab ol { margin-top: 0.5em; margin-bottom: 0.5em; }
-		div.sample div.sampletab li { line-height: 1.35; margin-bottom: 0px; margin-top: 0px; }
-		div.sample div.sampletab ul li { list-style-type: disc; }
-		div.sample div.sampletab p.tabhead { font-weight: bold; border-bottom: 3px double gray; }
-		p.sampletab1 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
-		p.example2 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
-		p.example3 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
-		p.example4 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
-		p.example5 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
-		p.example6 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
+			div.sample div#sampletab5 { border: 2px solid gray; background-color: white; }
+			div.sample div#sampletab6 { border: 2px solid gray; background-color: white; }
+			div.sample div.sampletab p { margin: 0.5em; }
+			/* 装飾（今回のテクニックとは無関係） */
+			div.sample div.sampletab ul, div.sampletab ol { margin-top: 0.5em; margin-bottom: 0.5em; }
+			div.sample div.sampletab li { line-height: 1.35; margin-bottom: 0px; margin-top: 0px; }
+			div.sample div.sampletab ul li { list-style-type: disc; }
+			div.sample div.sampletab p.tabhead { font-weight: bold; border-bottom: 3px double gray; }
+			p.sampletab1 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
+			p.example2 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
+			p.example3 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
+			p.example4 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
+			p.example5 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
+			p.example6 {font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;}
 
-		<!--
-		.sampletab1 {list-style:url(tatesen.png);}
-		.sampletab2 {list-style:url(tatesen.png);}
-		.sampletab3 {list-style:url(tatesen.png);}
-		.sampletab4 {list-style:url(tatesen.png);}
-		.sampletab5 {list-style:url(tatesen.png);}
-		.sampletab6 {list-style:url(tatesen.png);}
-		-->
+			<!--
+			.sampletab1 {list-style:url(tatesen.png);}
+			.sampletab2 {list-style:url(tatesen.png);}
+			.sampletab3 {list-style:url(tatesen.png);}
+			.sampletab4 {list-style:url(tatesen.png);}
+			.sampletab5 {list-style:url(tatesen.png);}
+			.sampletab6 {list-style:url(tatesen.png);}
+			-->
 
-		</style>
-	<script type="text/javascript">
-	function ChangeTab(tabname) {
-		// 全部消す
-		document.getElementById('sampletab1').style.display = 'none';
-		document.getElementById('sampletab2').style.display = 'none';
-		document.getElementById('sampletab3').style.display = 'none';
-		document.getElementById('sampletab4').style.display = 'none';
-		document.getElementById('sampletab5').style.display = 'none';
-		document.getElementById('sampletab6').style.display = 'none';
-		// 指定箇所のみ表示
-		if(tabname) {
-			document.getElementById(tabname).style.display = 'block';
+			</style>
+		<script type="text/javascript">
+		function ChangeTab(tabname) {
+			// 全部消す
+			document.getElementById('sampletab1').style.display = 'none';
+			document.getElementById('sampletab2').style.display = 'none';
+			document.getElementById('sampletab3').style.display = 'none';
+			document.getElementById('sampletab4').style.display = 'none';
+			document.getElementById('sampletab5').style.display = 'none';
+			document.getElementById('sampletab6').style.display = 'none';
+			// 指定箇所のみ表示
+			if(tabname) {
+				document.getElementById(tabname).style.display = 'block';
+			}
 		}
-	}
 	</script>
+
 </head>
 <body>
-	<div id="container">
-		<!-- ヘッダ開始 -->
-		<div id="header">
-			<div align="right">
-				<!-- phpにてログイン状態によりどちらかを表示 -->
-				<a href="login.html"><u>ログイン</u></a>
-				<a href="logout.html"><u>ログアウト</u></a>
-			</div>
-			<!-- ロゴの表示 -->
-			<a href="top.html">
-				<img src="logo.png" alt="ロゴ" style="width:100%;height:150px;max-width:1200px;">
-			</a>
-		</div>
 
-		<!-- サイドバー -->
+<!-- コンテナ開始 -->
+<div id="container">
+
+
+<!-- ヘッダ開始 -->
+<div id="header">
+	<div align="right" class="head">
+	<!-- phpにてログイン状態によりどちらかを表示 -->
+	<a href="login.html"><u>ログイン</u></a>
+	<a href="logout.html"><u>ログアウト</u></a>
+	</div>
+	<!-- ロゴの表示 -->
+		<a href="top.html">
+			<img src="logo.png" alt="ロゴ" style="width:100%;height:150px;max-width:1200px;">
+		</a>
+</div>
+<!-- ヘッダ終了 -->
+
+<!-- ナビゲーション開始 -->
+<!-- サイドバー -->
 		<div id="nav">
 			<!-- 検索  -->
 			<div style="margin: 0.5em;">
@@ -120,32 +127,32 @@
 			<br>
 			<!-- フローチャートの画像を入れてね
 			<img src=".png" align="center">
-		 	-->
+			 -->
 			</div>
 		</div>
+<!-- ナビゲーション終了 -->
 
+<!-- メインカラム開始 -->
 		<div align="center">
 			<!-- あなたのをデータベースから値をとって『ユーザ名さんの』にするのもいいかも -->
 			<h1>あなたのユーザ情報</h1>
     			<!-- ユーザ情報表示 -->
         		<!--  データベースから値を取ってね -->
-            	ユーザID:○○○○○○○<br>
-            	ユーザ名:××××××<br>
-        		メールアドレス:---------------@------.----.jp
-    	</div>
+            	<h4>ユーザID：○○○○○○○</h4>
+            	<h4>ユーザ名：××××××</h4>
+        		<h4>メールアドレス：---------------@------.----.jp</h4>
+			<br>
+			<br>
 
-		<div align="center">
     		<!-- 編集ボタン -->
+    		<div id="mainform-submit">
         	<input type="button" name="編集ボタン" value="アカウント情報の編集" onclick="location.href='userhensyu.html'" >
-
     		<!-- ログアウトボタン-->
     		<!-- phpにてログアウト処理をおなしゃす -->
-        	<div id="mainform-submit">
         	<input type="submit" name="ログアウトボタン" value="ログアウト">
-    		</div>
-
         	<!-- TOPへ戻るボタン -->
         	<input type="button" name="TOPボタン" value="TOPへ" onclick="location.href='top.html'">
+    		</div>
         </div>
 	</div>
 </body>

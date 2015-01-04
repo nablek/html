@@ -9,40 +9,38 @@
 		<h1>イベント情報更新画面</h1>
 		<!-- mail.phpはphpファイルができ次第対応するモノに変更してちょ -->
 		<form method="post" action="mail.php">
-    		<table class="sample-table">
-			<!-- イベント名入力欄 -->    		
-        		<tr>
-            		<th>イベント名</th>
-            		<td><input type="text" name="event_name" size="30"></td>
-        		</tr>
-        		
-        		<!-- イベント日時 -->
-        		<tr>
-        		<th>イベント日時</th>
-        		<td><input type="text" name="event_date" size="15"></td>
-        		</tr>
-        		
-        		<!-- イベント内容入力欄 -->
-        		<tr>
-            		<th>イベント内容</th>
-            		<td><textarea rows="10" cols="50" name="content"></textarea></td>
-        		</tr>
-        	</table>
-        	
-        	<!-- 画像挿入欄　-->	
-        	<tr>
-        	<form action="#" method="post" enctype="multipart/form-data">
-        	<p>
-        	<input type="file" name="filename" size="20" />
-        	</p>
-        	</form>
-        	</tr>
-        	
-        	<!-- 送信ボタン -->	
-        	<div id="mainform-submit">
-        	<input type="submit" name="送信ボタン" value="送信">
-    		</div>
-	    	</form>
+			<table class="sample-table">
+			<!-- イベント名入力欄 -->
+				<tr>
+					<th>イベント名</th>
+					<td><input type="text" name="event_name" size="30"></td>
+				</tr>
+			<!-- イベント日時 -->
+				<tr>
+					<th>イベント日時</th>
+					<td><input type="text" name="event_date" size="15"></td>
+				</tr>
+			<!-- イベント内容入力欄 -->
+				<tr>
+					<th>イベント内容</th>
+					<td><textarea rows="10" cols="50" name="content"></textarea></td>
+				</tr>
+			</table>
+			
+			<!-- 画像挿入欄 -->
+			<tr>
+				<form action="#" method="post" enctype="multipart/form-data">
+					<p>
+						<input type="file" name="filename" size="20" />
+					</p>
+				</form>
+			</tr>
+			
+			<!-- 送信ボタン -->
+			<div id="mainform-submit">
+				<input type="submit" name="送信ボタン" value="送信">
+			</div>
+		</form>
 	</div>
 </body>
 </html>

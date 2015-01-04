@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>アカウント情報管理</title>
+</head>
+<body>
+	<div align="center">
+		<h1>IDを忘れた場合</h1>
+		<!-- mail.phpはphpファイルができ次第対応するモノに変更してちょ -->
+		<form method="post" action="mail.php">
+			<table class="sample-table">
+				<!-- メールアドレス入力欄 -->
+				<tr>
+					<th>メールアドレス</th>
+					<td><input type="text" name="mailaddress" size="50"></td>
+				</tr>
+			</table>
+		</form>
+		
+		<!-- 送信ボタン -->
+		<div id="mainform-submit">
+			<input type="submit" name="送信" value="送信">
+		</div>
+	</div>
+</body>
+</html>
+
