@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>お問い合わせ</title>
+	<meta charset="UTF-8">
+	<title>お問い合わせ</title>
+	<style>
+		#header, #footer {
+		background-color: #fed;
+		height: 60px;
+		padding: 10px;
+		}
+		#main {
+		background-color: #eee;
+		padding: 10px;
+		}
+	</style>
 </head>
 <body>
-    <div align="center">
-        <h1>お問い合わせ</h1>
-        <!-- mail.phpはphpファイルができ次第対応するモノに変更してちょ -->
-        <!-- example.cgiはphpファイルができ次第対応するモノに変更してちょ -->
-        <form method="post" action="mail.php">
-            <form method="post" action="example.cgi">
-                <!-- ジャンル選択ラジオボタン -->
-                <p>質問のジャンルを選んでください<br>
-                <input type="radio" name="q" value="システム"> システム
-                <input type="radio" name="q" value="イベント"> イベント
-                <input type="radio" name="q" value="その他"> その他
-                </p>
-            </form>
+	<div align="center">
+		<div id="header">
+			<h1>お問い合わせ</h1>
+		</div>
+		<!-- mail.phpはphpファイルができ次第対応するモノに変更してちょ -->
+		<!-- example.cgiはphpファイルができ次第対応するモノに変更してちょ -->
+		<form method="post" action="mail.php">
+			<form method="post" action="example.cgi">
+				<!-- ジャンル選択ラジオボタン -->
+				<p>質問のジャンルを選んでください<br>
+					<input type="radio" name="q" value="システム"> システム
+					<input type="radio" name="q" value="イベント"> イベント
+					<input type="radio" name="q" value="その他"> その他
+				</p>
+			</form>
+			
+			<table class="sample-table">
+			<!-- 氏名入力欄 -->
+				<tr>
+					<th>氏名(必須)</th>
+					<td><input type="text" name="name" size="30"></td>
+				</tr>
+			<!-- メールアドレス入力欄 -->
+				<tr>
+					<th>メールアドレス</th>
+					<td><input type="text" name="mail_address" size="40"></td>
+				</tr>        
+			<!-- 件名入力欄 -->
+				<tr>
+					<th>件名(必須)</th>
+					<td><input type="text" name="subject" size="50"></td>
+				</tr>
+			<!-- 本文入力欄 -->
+				<tr>
+					<th>本文(必須)</th>
+					<td><textarea rows="10" cols="50" name="sentence"></textarea></td>
+				</tr>
+			</table>
+			
+			<!-- 送信ボタン -->
+			<div id="mainform-submit">
+				<input type="submit" name="送信ボタン" value="送信" onclick="location.href='sosin.html'">
+			</div>
             
-            <table class="sample-table">
-                <!-- 氏名入力欄 -->
-                <tr>
-                <th>氏名(必須)</th>
-                <td><input type="text" name="name" size="30"></td>
-                </tr>
-            
-                <!-- メールアドレス入力欄 -->
-                <tr>
-                <th>メールアドレス</th>
-                <td><input type="text" name="mail_address" size="40"></td>
-                </tr>
-        
-                <!-- 件名入力欄 -->
-                <tr>
-        	    <th>件名(必須)</th>
-        	    <td><input type="text" name="subject" size="50"></td>
-    	        </tr>
-            
-                <!-- 本文入力欄 -->
-                <tr>
-                <th>本文(必須)</th>
-                <td><textarea rows="10" cols="50" name="sentence"></textarea></td>
-                </tr>
-            </table>
-        
-            <!-- 送信ボタン -->
-            <div id="mainform-submit">
-            <input type="submit" name="送信ボタン" value="送信">
-            </div>
-        </form>
-    </div>
+			<div id="footer">
+				<a href="/php/top.php">トップページ</a>
+			</div>
+		</form>
+	</div>
 </body>
 </html>

@@ -3,10 +3,23 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>アカウント情報管理</title>
+	<style>
+		#header, #footer {
+		background-color: #fed;
+		height: 60px;
+		padding: 10px;
+		}
+		#main {
+		background-color: #eee;
+		padding: 10px;
+		}
+	</style>
 </head>
 <body>
 	<div align="center">
-		<h1>IDを忘れた場合</h1>
+		<div id="header">
+			<h1>IDを忘れた場合</h1>
+		</div>
 		<!-- mail.phpはphpファイルができ次第対応するモノに変更してちょ -->
 		<form method="post" action="mail.php">
 			<table class="sample-table">
@@ -17,10 +30,16 @@
 				</tr>
 			</table>
 		</form>
-		
+
 		<!-- 送信ボタン -->
+		<!-- データベースに書き込みを行うことができればsousin.htmlに -->
+		<!-- データベースに書き込みを行うことができなければerror.htmlに遷移 -->
 		<div id="mainform-submit">
-			<input type="submit" name="送信" value="送信">
+			<input type="submit" name="送信ボタン" value="送信" onclick="location.href='/html/sosin.html'">
+		</div>
+
+		<div id="footer">
+			<a href="/php/top.php">トップページ</a>
 		</div>
 	</div>
 </body>

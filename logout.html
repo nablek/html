@@ -3,15 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ログアウト完了</title>
+	<style>
+		#header, #footer {
+		background-color: #fed;
+		height: 60px;
+		padding: 10px;
+		}
+		#main {
+		background-color: #eee;
+		padding: 10px;
+		}
+	</style>
 </head>
 <body>
 	<div align="center">
-		<h3>ログアウトしました</h3>
+		<div id="header">	
+			<h3>ログアウトしました</h3>
+		</div>
 
 		<!-- トップへ戻るボタン -->
 		<div id="mainform-submit">
-    		<input type="button" name="TOP" value="TOPへ" onclick="location.href='/php/top.php'">
-    	</div>
-    </div>
+			<input type="button" name="TOP" value="TOPへ" onclick="location.href='/php/top.php'">
+		</div>
+	</div>
 </body>
 </html>
