@@ -38,7 +38,8 @@ function ChangeTab(tabname) {
 			</div>
 		</p>
 	</div>
-	
+
+	<form action="train.php" method="post">
 	<div id="tab2" class="tab">
 		<p>
 		<!-- ここに中身を記述 -->
@@ -54,19 +55,19 @@ function ChangeTab(tabname) {
 							<td>出発駅</td>
 							<td>
 								<form>
-									<select name="month">
-										<option value="1" selected>高知</option>
-										<option value="2">薊野</option>
-										<option value="3">土佐一宮</option>
-										<option value="4">布師田</option>
-										<option value="5">土佐大津</option>
-										<option value="6">後免</option>
-										<option value="7">土佐長岡</option>
-										<option value="8">山田西町</option>
-										<option value="9">土佐山田</option>
-										<option value="10">後免町</option>
-										<option value="11">立田</option>
-										<option value="12">のいち</option>
+									<select name="start_station">
+										<option value="高知" selected>高知</option>
+										<option value="薊野">薊野</option>
+										<option value="土佐一宮">土佐一宮</option>
+										<option value="布師田">布師田</option>
+										<option value="土佐大津">土佐大津</option>
+										<option value="後免">後免</option>
+										<option value="土佐長岡">土佐長岡</option>
+										<option value="山田西町">山田西町</option>
+										<option value="土佐山田">土佐山田</option>
+										<option value="後免町">後免町</option>
+										<option value="立田">立田</option>
+										<option value="のいち">のいち</option>
 									</select>
 								</form>
 							</td>
@@ -74,19 +75,19 @@ function ChangeTab(tabname) {
 							<td>到着駅</td>
 							<td>
 								<form>
-									<select name="month">
-										<option value="1">高知</option>
-										<option value="2">薊野</option>
-										<option value="3">土佐一宮</option>
-										<option value="4">布師田</option>
-										<option value="5">土佐大津</option>
-										<option value="6">後免</option>
-										<option value="7">土佐長岡</option>
-										<option value="8">山田西町</option>
-										<option value="9" selected>土佐山田</option>
-										<option value="10">後免町</option>
-										<option value="11">立田</option>
-										<option value="12">のいち</option>
+									<select name="end_station">
+										<option value="高知" selected>高知</option>
+										<option value="薊野">薊野</option>
+										<option value="土佐一宮">土佐一宮</option>
+										<option value="布師田">布師田</option>
+										<option value="土佐大津">土佐大津</option>
+										<option value="後免">後免</option>
+										<option value="土佐長岡">土佐長岡</option>
+										<option value="山田西町">山田西町</option>
+										<option value="土佐山田">土佐山田</option>
+										<option value="後免町">後免町</option>
+										<option value="立田">立田</option>
+										<option value="のいち">のいち</option>
 									</select>
 								</form>
 							</td>
@@ -112,6 +113,7 @@ function ChangeTab(tabname) {
 			</div>
 		</p>
 	</div>
+	</form>
 
 </div>
 
