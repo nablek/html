@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>イベント情報更新画面</title>
+	<title>店舗イベント・おすすめ情報更新画面</title>
 	<style>
 		#header, #footer {
 		background-color: #fed;
@@ -18,11 +18,11 @@
 <body>
 	<div align="center">
 		<div id="header">
-			<h1>イベント情報更新画面</h1>
+			<h1>店舗イベント・おすすめ情報更新</h1>
 		</div>
 		<!-- mail.phpはphpファイルができ次第対応するモノに変更してちょ -->
 		<form method="post" action="mail.php">
-			<table class="sample-table">
+			<table>
 			<!-- イベント名入力欄 -->
 				<tr>
 					<th>イベント名</th>
@@ -52,7 +52,7 @@
 			<!-- 送信ボタン -->
 			<!-- データベースに書き込みを行うことができればsousin.htmlに -->
 			<!-- データベースに書き込みを行うことができなければerror.htmlに遷移 -->
-				<input type="submit" name="送信ボタン" value="送信" onclick="location.href='/html/sosin.html'">
+			<input type="submit" name="送信ボタン" value="送信" onclick="location.href='/html/sosin.html'">
 		</form>
 
 		<div id="footer">

@@ -23,100 +23,96 @@
 		</div>
 		<!-- mail.phpはphpファイルができ次第対応するモノに変更してちょ -->
 		<form method="post" action="mail.php">
-    		<table>
-    			<!-- イベント名入力欄 -->
-        		<tr>
-            		<th>イベント名</th>
-            		<td><input type="text" name="event_name" size="30"></td>
-        		</tr>
-        		<tr>
-        	</table>
+			<table>
+			<!-- イベント名入力欄 -->
+				<tr>
+					<th>イベント名</th>
+					<td><input type="text" name="event_name" size="30"></td>
+				</tr>
+			</table>
 
-        	<!-- 開催年月日プルダウンボタン -->
-        	<form action="">
-        	<p>
-        	<select name="year" id="year">
-        	<option value="2014" selected="selected">2014</option>
-        	<option value="2015">2015</option>
-        	<option value="2016">2016</option>
-        	</select><label for="year">年</label>
-        	<select name="month" id="month">
-        	<option value="01" selected="selected">1</option>
-  			<option value="02">2</option>
-  			<option value="03">3</option>
-  			<option value="04">4</option>
-  			<option value="05">5</option>
-  			<option value="06">6</option>
-  			<option value="07">7</option>
-  			<option value="08">8</option>
-  			<option value="09">9</option>
-  			<option value="10">10</option>
-  			<option value="11">11</option>
-  			<option value="12">12</option>
-			</select><label for="month">月</label>
-			<select name="day" id="day">
-  			<option value="01" selected="selected">1</option>
-  			<option value="02">2</option>
-  			<option value="03">3</option>
-  			<option value="04">4</option>
-  			<option value="05">5</option>
-  			<option value="06">6</option>
-  			<option value="07">7</option>
-  			<option value="08">8</option>
-  			<option value="09">9</option>
-  			<option value="10">10</option>
-  			<option value="11">11</option>
-  			<option value="12">12</option>
-  			<option value="13">13</option>
-  			<option value="14">14</option>
-  			<option value="15">15</option>
-  			<option value="16">16</option>
-  			<option value="17">17</option>
-  			<option value="18">18</option>
-  			<option value="19">19</option>
-  			<option value="20">20</option>
-  			<option value="21">21</option>
-  			<option value="22">22</option>
-  			<option value="23">23</option>
-  			<option value="24">24</option>
-  			<option value="25">25</option>
-  			<option value="26">26</option>
-  			<option value="27">27</option>
-  			<option value="28">28</option>
-  			<option value="29">29</option>
-  			<option value="30">30</option>
-  			<option value="31">31</option>
-			</select><label for="day">日</label>
-		</p>
-		</form>
+			<!-- 開催年月日プルダウンボタン -->
+			<form action="">
+				<p>
+					<select name="year" id="year">
+						<option value="2014" selected="selected">2014</option>
+						<option value="2015">2015</option>
+						<option value="2016">2016</option>
+					</select><label for="year">年</label>
+					<select name="month" id="month">
+						<option value="01" selected="selected">1</option>
+						<option value="02">2</option>
+						<option value="03">3</option>
+						<option value="04">4</option>
+						<option value="05">5</option>
+						<option value="06">6</option>
+						<option value="07">7</option>
+						<option value="08">8</option>
+						<option value="09">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select><label for="month">月</label>
+					<select name="day" id="day">
+						<option value="01" selected="selected">1</option>
+						<option value="02">2</option>
+						<option value="03">3</option>
+						<option value="04">4</option>
+						<option value="05">5</option>
+						<option value="06">6</option>
+						<option value="07">7</option>
+						<option value="08">8</option>
+						<option value="09">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+						<option value="31">31</option>
+					</select><label for="day">日</label>
+				</p>
+			</form>
 
-        	<table>
-        		<!-- イベント場所入力欄 -->
-        		<tr>
-        		<th>イベント場所</th>
-            		<td><input type="text" name="event_place" size="30"></td>
-        		</tr>
-
-        		<!-- イベント内容入力欄 -->
-        		<tr>
-            		<th>イベント内容</th>
-            		<td><textarea rows="10" cols="50" name="event_content"></textarea></td>
-        		</tr>
-        	</table>
-
-        	<!-- 画像挿入欄 -->
-        	<tr>
-        	<form action="#" method="post" enctype="multipart/form-data">
-        	<p>
-        	<input type="file" name="filename" size="20" />
-        	</p>
-        	</form>
-        	</tr>
-
-        	<!-- 送信ボタン -->
+			<table>
+			<!-- イベント場所入力欄 -->
+				<tr>
+					<th>イベント場所</th>
+					<td><input type="text" name="event_place" size="30"></td>
+				</tr>
+			<!-- イベント内容入力欄 -->
+				<tr>
+					<th>イベント内容</th>
+					<td><textarea rows="10" cols="50" name="event_content"></textarea></td>
+				</tr>
+			</table>
+			<!-- 画像挿入欄 -->
+			<tr>
+				<form action="#" method="post" enctype="multipart/form-data">
+					<p>
+						<input type="file" name="filename" size="20" />
+					</p>
+				</form>
+			</tr>
+			<!-- 送信ボタン -->
 			<!-- データベースに書き込みを行うことができればsousin.htmlに -->
 			<!-- データベースに書き込みを行うことができなければerror.htmlに遷移 -->
-				<input type="submit" name="送信ボタン" value="送信" onclick="location.href='/html/sosin.html'">
+			<input type="submit" name="送信ボタン" value="送信" onclick="location.href='/html/sosin.html'">
 		</form>
 
 		<div id="footer">

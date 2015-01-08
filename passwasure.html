@@ -22,24 +22,25 @@
 		</div>
 		<!-- mail.phpはphpファイルができ次第対応するモノに変更してちょ -->
 		<form method="post" action="mail.php">
-    			<!-- ユーザID入力欄 -->
-        		<tr>
-            		<th>ユーザID</th>
-            		<td><input type="text" name="user_id" size="30"></td>
-        		</tr>
-        	
-        		<!-- メールアドレス入力欄 -->
- 				<tr>
-            		<th>メールアドレス</th>
-            		<td><input type="text" name="mailaddress" size="50"></td>
+			<table>
+				<!-- ユーザID入力欄 -->
+				<tr>
+					<th>ユーザID</th>
+					<td><input type="text" name="user_id" size="30"></td>
+				</tr>
+	        	
+				<!-- メールアドレス入力欄 -->
+				<tr>
+					<th>メールアドレス</th>
+					<td><input type="text" name="mailaddress" size="50"></td>
 				</tr>
 			</table>
 		</form>
 		
 		<!-- 送信ボタン -->
 		<div id="mainform-submit">
-        	<input type="submit" name="送信" value="送信" onclick="location.href='/html/sosin.html'">
-    	</div>
+			<input type="submit" name="送信" value="送信" onclick="location.href='/html/sosin.html'">
+		</div>
 		
 		<div id="footer">
 			<a href="/php/top.php">トップページ</a>
