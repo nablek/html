@@ -2,22 +2,13 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<link rel="stylesheet" type="text/css" href="/css/style2.css" />	
 	<title>お問い合わせ</title>
-	<style>
-		#header, #footer {
-		background-color: #fed;
-		height: 60px;
-		padding: 10px;
-		}
-		#main {
-		background-color: #eee;
-		padding: 10px;
-		}
-	</style>
 </head>
 <body>
 	<div align="center">
-		<div id="header">
+		<div class="header">
 			<h1>お問い合わせ</h1>
 		</div>
 		<!-- mail.phpはphpファイルができ次第対応するモノに変更してちょ -->
@@ -32,7 +23,7 @@
 				</p>
 			</form>
 			
-			<table class="sample-table">
+			<table>
 			<!-- 氏名入力欄 -->
 				<tr>
 					<th>氏名(必須)</th>
@@ -60,7 +51,7 @@
 				<input type="submit" name="送信ボタン" value="送信" onclick="location.href='/html/sosin.html'">
 			</div>
             
-			<div id="footer">
+			<div class="footer">
 				<a href="/php/top.php">トップページ</a>
 			</div>
 		</form>
