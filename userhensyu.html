@@ -3,51 +3,49 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>ユーザ情報変更</title>
-	<link rel="stylesheet" type="text/css" href="top.css">	
+	<link rel="stylesheet" type="text/css" href="/css/top.css">	
 </head>
 <body>
 
-<!-- コンテナ開始 -->
-<div id="container">
+	<!-- コンテナ開始 -->
+	<div id="container">
+		<!-- ヘッダ開始 -->
+		<div id="header">
+			<!-- ロゴの表示 -->
+			<div align="center">
+				<a href="/php/top.php">
+					<img src="/picture/logo.png" alt="ロゴ" style="width:100%;height:150px;max-width:1200px;">
+				</a>
+			</div>
+		</div>
+		<!-- ヘッダ終了 -->
 
-
-	<!-- ヘッダ開始 -->
-	<div id="header">
-		<!-- ロゴの表示 -->
-		<div align="center">
-			<a href="/php/top.html">
-				<img src="/picture/logo.png" alt="ロゴ" style="width:100%;height:150px;max-width:1200px;">
-			</a>
-		</div>
-	</div>
-	<!-- ヘッダ終了 -->
-
-	<!-- ナビゲーション開始 -->
-	<!-- サイドバー -->
-	<div id="nav">
-		<!-- 検索  -->
-		<div style="margin: 0.5em;">
-			<form target="_blank" method="get" action="http://search.allabout.co.jp/s.php">
-				<input type="text" title="検索したい内容を入力してください" name="qs" />
-				<input type="submit" value="検索" />
-				<input type="hidden" value="sjis" name="ie" />
-			</form>
-		</div>
-		<br>
-		<br>
-	<!-- お問い合わせ -->
-		<div id="toi">
-			<img src="/picture/toiawase.png" style="width:10%; height:auto;"><a href="toiawase.html">お問い合わせ</a>
-		</div>
-		<br>
-		<br>
-	<!-- よくある質問 -->
-		<div id="shitsumon">
-			<img src="/picture/hatena.png" style="width:10%; height:auto;" align="center"><a href="shitsumon.html">よくある質問</a>
-		</div>
-		<br>
-		<br>
-	<!-- 学内イベント情報追加 -->
+		<!-- ナビゲーション開始 -->
+		<!-- サイドバー -->
+		<div id="nav">
+			<!-- 検索  -->
+			<div style="margin: 0.5em;">
+				<form target="_blank" method="get" action="http://search.allabout.co.jp/s.php">
+					<input type="text" title="検索したい内容を入力してください" name="qs" />
+					<input type="submit" value="検索" />
+					<input type="hidden" value="sjis" name="ie" />
+				</form>
+			</div>
+			<br>
+			<br>
+			<!-- お問い合わせ -->
+			<div id="toi">
+				<img src="/picture/toiawase.png" style="width:10%; height:auto;"><a href="toiawase.html">お問い合わせ</a>
+			</div>
+			<br>
+			<br>
+			<!-- よくある質問 -->
+			<div id="shitsumon">
+				<img src="/picture/hatena.png" style="width:10%; height:auto;" align="center"><a href="shitsumon.html">よくある質問</a>
+			</div>
+			<br>
+			<br>
+			<!-- 学内イベント情報追加 -->
 			<div id="gakunaievent">
 				<a href="/html/gakunaieve.html">学内イベント情報追加</a>
 			</div>
@@ -63,108 +61,108 @@
 			
 			<!-- 商用イベント情報追加 -->
 			<div id="syouyouevent">
-				<a href="/html/evekosin.html">店舗イベント・おすすめ情報追加</a>
+				<a href="/php/jukyoeve2.php">店舗イベント・おすすめ情報追加</a>
 			</div>
 			<br>
 			<br>	
 		
-	<!-- ユーザ情報 -->
-	<!-- phpにてログイン状態のときに表示 -->
-		<div id="user">
-			<img src="/picture/user.png" style="width:10%; height:auto;" align="center"><a href="user.html">ユーザ情報</a>
-		</div>
-	<!-- phpにてログイン状態によりどちらかを表示 -->
-		<? php
-		session_start();
-		if (!isset($_SESSION['visited'])) {
-		<a href="/php/index4.php"><u>ログイン</a>
-		} else {
-		<a href="/php/logout.php"><u>ログアウト</a>
-		}
-		?>
-		<br>
-		<br>
-	<!-- フローチャート -->
-		<div id="flowchart">
-			合格から入学までの流れ
+			<!-- ユーザ情報 -->
+			<!-- phpにてログイン状態のときに表示 -->
+			<div id="user">
+				<img src="/picture/user.png" style="width:10%; height:auto;" align="center"><a href="/html/user.html">ユーザ情報</a>
+			</div>
+			<!-- phpにてログイン状態によりどちらかを表示 -->
+			<? php
+			session_start();
+			if (!isset($_SESSION['visited'])) {
+			<a href="/php/index4.php"><u>ログイン</a>
+			} else {
+			<a href="/php/logout.php"><u>ログアウト</a>
+			}
+			?>
 			<br>
-	<!-- フローチャートの画像を入れてね -->
-			<img src="/picture/flow.png" style="width:175px; height:175px;" align="center">
-		</div>			
-		<br>
-		<br>
-	<!-- 管理者用ページへの遷移 -->
-		<div>
-		<!-- リンク先は該当ページ -->
-			<a href="/html/ktop.html">管理者用ページ</a>
+			<br>
+			<!-- フローチャート -->
+			<div id="flowchart">
+				合格から入学までの流れ
+				<br>
+			<!-- フローチャートの画像を入れてね -->
+				<img src="/picture/flow.png" style="width:175px; height:175px;" align="center">
+			</div>			
+			<br>
+			<br>
+			<!-- 管理者用ページへの遷移 -->
+			<div>
+				<!-- リンク先は該当ページ -->
+				<a href="/html/ktop.html">管理者用ページ</a>
+			</div>
 		</div>
-	</div>
-<!-- ナビゲーション終了 -->
+		<!-- ナビゲーション終了 -->
 
-<!-- メインカラム開始 -->
-<div id="content">
-	<div align="center">
-		<h1>ユーザ情報変更</h1>
-	<div class="user">
-		<!-- データベースから値を取得してフォーラムに現在の情報を表示したいっす -->
-		<!-- それぞれvalueの部分に現在の情報を入れ込む -->
-		<!-- actionにはデータの送信先（プログラム）のURIを指定 -->
-		<form method="post" action="">
-	    	<div >
-    			<!-- ユーザID入力欄 -->
-        		<tr>
-				<td width="185"><span>ユーザID：</span></td>
-				<td width="500" colspan="2">
-				<input type="text" name="user_id" id="user_id" style="width: 200px;" maxlength="256" value="○○○○○○○○" />
-				</td>
-				</tr>
+		<!-- メインカラム開始 -->
+		<div id="content">
+			<div align="center">
+				<h1>ユーザ情報変更</h1>
+				<div class="user">
+					<!-- データベースから値を取得してフォーラムに現在の情報を表示したいっす -->
+					<!-- それぞれvalueの部分に現在の情報を入れ込む -->
+					<!-- actionにはデータの送信先（プログラム）のURIを指定 -->
+					<form method="post" action="">
+				    	<div>
+						<!-- ユーザID入力欄 -->
+							<tr>
+								<td width="185"><span>ユーザID：</span></td>
+								<td width="500" colspan="2">
+									<input type="text" name="user_id" id="user_id" style="width: 200px;" maxlength="256" value="○○○○○○○○" />
+								</td>
+							</tr>
 
+							<br>
+							<br>
+
+						<!-- ユーザ名入力欄 -->
+							<tr>
+								<td width="185"><span>ユーザ名：</span></td>
+								<td width="500" colspan="2">
+									<input type="text" name="user_name" id="user_name" style="width: 200px;" maxlength="256" value="××××××××" />
+								</td>
+							</tr>
+
+							<br>
+							<br>
+
+						<!-- メールアドレス入力欄 -->
+							<tr>
+								<td width="185"><span>メールアドレス：</span></td>
+								<td width="500" colspan="2">
+									<input type="text" name="mailaddress" id="mailaddress" style="width: 250px;" maxlength="256" value="---------------@------.----.jp" />
+								</td>
+							</tr>
+
+							<br>
+							<br>
+
+						<!-- パスワード入力欄 -->
+							<tr>
+								<td width="185"><span>パスワード：</span></td>
+								<td width="500" colspan="2">
+									<input type="password" name="password" id="password" style="width: 100px;" maxlength="256" value="5555" />
+								</td>
+							</tr>
+						</div>
+					</form>
+				</div>
 				<br>
-				<br>
-
-        		<!-- ユーザ名入力欄 -->
- 				<tr>
-				<td width="185"><span>ユーザ名：</span></td>
-				<td width="500" colspan="2">
-				<input type="text" name="user_name" id="user_name" style="width: 200px;" maxlength="256" value="××××××××" />
-				</td>
-				</tr>
-
-				<br>
-				<br>
-
-				<!-- メールアドレス入力欄 -->
-        		<tr>
-				<td width="185"><span>メールアドレス：</span></td>
-				<td width="500" colspan="2">
-				<input type="text" name="mailaddress" id="mailaddress" style="width: 250px;" maxlength="256" value="---------------@------.----.jp" />
-				</td>
-				</tr>
-
-				<br>
-				<br>
-
-    			<!-- パスワード入力欄 -->
-				<tr>
-				<td width="185"><span>パスワード：</span></td>
-				<td width="500" colspan="2">
-				<input type="password" name="password" id="password" style="width: 100px;" maxlength="256" value="5555" />
-				</td>
-				</tr>
-
-        	</div>
-        </div>
-
-		<br>
-
-        	<!-- 送信ボタン -->
-        	<div id="mainform-submit">
-        	<input type="button" name="送信ボタン" value="変更を保存" onclick="location.href='/html/henkoukanryou.html'">
-        	<!-- 前のページに戻るボタン -->
-    		<input type="button" Value="戻る" onClick="history.go(-1);">
-    		<!-- TOPへ戻るボタン -->
-        	<input type="button" name="TOPボタン" value="TOPへ" onclick="location.href='/php/top.php'">
-    		</div>
+				
+				<!-- 送信ボタン -->
+				<div id="mainform-submit">
+					<input type="button" name="送信ボタン" value="変更を保存" onclick="location.href='/html/henkoukanryou.html'">
+					<!-- 前のページに戻るボタン -->
+					<input type="button" Value="戻る" onClick="history.go(-1);">
+					<!-- TOPへ戻るボタン -->
+					<input type="button" name="TOPボタン" value="TOPへ" onclick="location.href='/php/top.php'">
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
