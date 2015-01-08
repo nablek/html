@@ -19,11 +19,11 @@
 <body>
 	<div align="center">
 		<div id="header">
-			<h1>イベント情報更新画面</h1>
+			<h1>学内イベント情報更新</h1>
 		</div>
 		<!-- mail.phpはphpファイルができ次第対応するモノに変更してちょ -->
 		<form method="post" action="mail.php">
-    		<table class="sample-table">
+    		<table>
     			<!-- イベント名入力欄 -->
         		<tr>
             		<th>イベント名</th>
@@ -116,9 +116,7 @@
         	<!-- 送信ボタン -->
 			<!-- データベースに書き込みを行うことができればsousin.htmlに -->
 			<!-- データベースに書き込みを行うことができなければerror.htmlに遷移 -->
-			<div id="mainform-submit">
 				<input type="submit" name="送信ボタン" value="送信" onclick="location.href='/html/sosin.html'">
-			</div>
 		</form>
 
 		<div id="footer">
