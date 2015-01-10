@@ -1,0 +1,341 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>生活施設</title>
+	<link rel="stylesheet" type="text/css" href="kanri.css" />
+	<link rel="stylesheet" type="text/css" href="seikatu.css" />
+	
+
+	<script type="text/javascript">
+	<!--
+	function ChangeTab(tabname) {
+   	// 全部消す
+   	document.getElementById('tab1').style.display = 'none';
+   	document.getElementById('tab2').style.display = 'none';
+   	document.getElementById('tab3').style.display = 'none';
+   	document.getElementById('tab4').style.display = 'none';
+
+   	// 指定箇所のみ表示
+   document.getElementById(tabname).style.display = 'block';
+	}
+// -->
+</script>
+</head>
+<body>
+<div id="container">
+<!-- サイドバー開始 -->
+<div id="nav">
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/html/ktop.html"><font color="gray" size="3"><span class="pop">管理者TOP画面</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/php/top.php"><font color="white" size="3"><span class="pop">利用者TOP画面</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="ここにリンク先"><font color="white" size="3"><span class="pop">お問い合わせ</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="ここにリンク先"><font color="white"><span class="pop">よくある質問</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/html/kevent.html"><font color="white"><span class="pop">イベント情報</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/html/kjukyo.html"><font color="white"><span class="pop">住居情報</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/html/kkoukyou.html"><font color="white"><span class="pop">公共施設情報</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/html/kseikatu.html"><font color="white"><span class="pop">生活施設情報</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/html/kmoney.html"><font color="white"><span class="pop">金融機関情報</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/html/kkoutuu.html"><font color="white"><span class="pop">交通機関情報</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/php/logout.php"><font color="white"><span class="pop">ログアウト</span></font></a>
+</span>
+<br>
+<br>
+</div>
+<!-- サイドバー終了 -->
+
+<div id="content">
+	<div class="tabbox">
+		<p class="tabs">
+			<a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false;">スーパー</a>
+      		<a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); return false;">コンビニ</a>
+      		<a href="#tab3" class="tab3" onclick="ChangeTab('tab3'); return false;">自転車・バイク屋</a>
+      		<a href="#tab4" class="tab4" onclick="ChangeTab('tab4'); return false;">その他</a>
+   		</p>
+
+   		<div id="tab1" class="tab">
+      		<p>
+      		<!-- ここに中身を記述 -->
+      			<div id="site-box">
+      				<div id ="a-box">
+						<!-- データテーブル（地域情報テーブル）のデータ（カテゴリが生活施設情報に該当するもの）を取得して基本情報の掲載 -->
+						<h2 id="lineA">あスーパー</h2>
+
+						<div id="b-box">
+						<img src="logo.png" width="200px" height="200px" alt="代替テキスト"><br>
+						</div>
+
+						<div id="b-box">
+						<ul>
+							<li>住所</li>
+							<li>電話番号</li>
+							<li>営業時間</li>
+							<li>定休日</li>
+							<li>URL</li>
+						</ul>
+			<!-- 編集ボタン -->
+			<tr>
+			<td colspan="2"><input type="button" value="編集"></td>
+			</tr>
+
+			<!-- 削除ボタン -->
+			<!-- phpの方でデータベースから削除おなしゃす -->
+			<tr>
+			<td colspan="2"><input type="button" value="削除"></td>
+			</tr>
+						</div>
+					</div>
+
+					<!-- データテーブル（地域情報テーブル）のデータ（カテゴリが生活施設情報に該当するもの）を取得しておすすめ物件の掲載 -->
+					<h2>イベント名</h2>
+					<div id="b-box">
+						<ul>
+							<li>場所（住所）</li>
+							<li>時間</li>
+							<li>イベント概要</li>
+						</ul>
+
+						<br>
+			<!-- 編集ボタン -->
+			<tr>
+			<td colspan="2"><input type="button" value="編集"></td>
+			</tr>
+
+			<!-- 削除ボタン -->
+			<!-- phpの方でデータベースから削除おなしゃす -->
+			<tr>
+			<td colspan="2"><input type="button" value="削除"></td>
+			</tr>
+					</div>
+					<img src="logo.png" width="200px" height="200px" alt="代替テキスト">
+				</div>
+			</p>
+   		</div>
+
+		<div id="tab2" class="tab">
+ 			<p>
+
+      	<!-- ここに中身を記述 -->
+      			<div id="site-box">
+      				<div id ="a-box">
+						<!-- データテーブル（地域情報テーブル）のデータ（カテゴリが生活施設情報に該当するもの）を取得して基本情報の掲載 -->
+						<h2 id="lineA">あコンビニ</h2>
+
+						<div id="b-box">
+						<img src="logo.png" width="200px" height="200px" alt="代替テキスト"><br>
+						</div>
+
+						<div id="b-box">
+						<ul>
+							<li>住所</li>
+							<li>電話番号</li>
+							<li>営業時間</li>
+							<li>定休日</li>
+							<li>URL</li>
+						</ul>
+			<!-- 編集ボタン -->
+			<tr>
+			<td colspan="2"><input type="button" value="編集"></td>
+			</tr>
+
+			<!-- 削除ボタン -->
+			<!-- phpの方でデータベースから削除おなしゃす -->
+			<tr>
+			<td colspan="2"><input type="button" value="削除"></td>
+			</tr>
+						</div>
+					</div>
+
+					<!-- コンビニは商用イベントを掲載しないため空白 -->
+					<h2>　</h2>
+					<div id="b-box">
+						<ul>
+						</ul>
+					</div>
+					<img src="white.png" width="200px" height="200px" alt="代替テキスト">
+				</div>
+			</p>
+   		</div>
+
+		<div id="tab3" class="tab">
+      		<p>
+
+      <!-- ここに中身を記述 -->
+      			<div id="site-box">
+      				<div id ="a-box">
+						<!-- データテーブル（地域情報テーブル）のデータ（カテゴリが生活施設情報に該当するもの）を取得して基本情報の掲載 -->
+						<h2 id="lineA">あサイクル</h2>
+
+						<div id="b-box">
+						<img src="logo.png" width="200px" height="200px" alt="代替テキスト"><br>
+						</div>
+
+						<div id="b-box">
+						<ul>
+							<li>住所</li>
+							<li>電話番号</li>
+							<li>営業時間</li>
+							<li>定休日</li>
+							<li>URL</li>
+						</ul>
+			<!-- 編集ボタン -->
+			<tr>
+			<td colspan="2"><input type="button" value="編集"></td>
+			</tr>
+
+			<!-- 削除ボタン -->
+			<!-- phpの方でデータベースから削除おなしゃす -->
+			<tr>
+			<td colspan="2"><input type="button" value="削除"></td>
+			</tr>
+						</div>
+					</div>
+
+					<!-- データテーブル（地域情報テーブル）のデータ（カテゴリが生活施設情報に該当するもの）を取得しておすすめ物件の掲載 -->
+					<h2>イベント名</h2>
+					<div id="b-box">
+						<ul>
+							<li>場所（住所）</li>
+							<li>時間</li>
+							<li>イベント概要</li>
+						</ul>
+
+						<br>
+			<!-- 編集ボタン -->
+			<tr>
+			<td colspan="2"><input type="button" value="編集"></td>
+			</tr>
+
+			<!-- 削除ボタン -->
+			<!-- phpの方でデータベースから削除おなしゃす -->
+			<tr>
+			<td colspan="2"><input type="button" value="削除"></td>
+			</tr>
+					</div>
+					<img src="logo.png" width="200px" height="200px" alt="代替テキスト">
+				</div>
+			</p>
+   		</div>
+
+   		<div id="tab4" class="tab">
+      		<p>
+
+      <!-- ここに中身を記述 -->
+				<div id="site-box">
+      				<div id ="a-box">
+						<!-- データテーブル（地域情報テーブル）のデータ（カテゴリが生活施設情報に該当するもの）を取得して基本情報の掲載 -->
+						<h2 id="lineA">あ食堂</h2>
+
+						<div id="b-box">
+						<img src="logo.png" width="200px" height="200px" alt="代替テキスト"><br>
+						</div>
+
+						<div id="b-box">
+						<ul>
+							<li>住所</li>
+							<li>電話番号</li>
+							<li>営業時間</li>
+							<li>定休日</li>
+							<li>URL</li>
+						</ul>
+			<!-- 編集ボタン -->
+			<tr>
+			<td colspan="2"><input type="button" value="編集"></td>
+			</tr>
+
+			<!-- 削除ボタン -->
+			<!-- phpの方でデータベースから削除おなしゃす -->
+			<tr>
+			<td colspan="2"><input type="button" value="削除"></td>
+			</tr>
+						</div>
+					</div>
+
+					<!-- データテーブル（地域情報テーブル）のデータ（カテゴリが生活施設情報に該当するもの）を取得しておすすめ物件の掲載 -->
+					<h2>イベント名</h2>
+					<div id="b-box">
+						<ul>
+							<li>場所（住所）</li>
+							<li>時間</li>
+							<li>イベント概要</li>
+						</ul>
+
+						<br>
+			<!-- 編集ボタン -->
+			<tr>
+			<td colspan="2"><input type="button" value="編集"></td>
+			</tr>
+
+			<!-- 削除ボタン -->
+			<!-- phpの方でデータベースから削除おなしゃす -->
+			<tr>
+			<td colspan="2"><input type="button" value="削除"></td>
+			</tr>
+					</div>
+					<img src="logo.png" width="200px" height="200px" alt="代替テキスト">
+				</div>
+     		 </p>
+   		</div>
+
+	</div>
+	</div>
+	</div>
+	
+
+	<script type="text/javascript"><!--
+  	// デフォルトのタブを選択
+  	ChangeTab('tab1');
+	// --></script>
+
+</body>
+</html>
