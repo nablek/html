@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>交通機関情報編集</title>
+	<link rel="stylesheet" type="text/css" href="koutuu.css">
+	<link rel="stylesheet" type="text/css" href="kanri.css">
+	<script type="text/javascript">
+		<!--
+		function ChangeTab(tabname) {
+		   // 全部消す
+		   document.getElementById('tab1').style.display = 'none';
+		   document.getElementById('tab2').style.display = 'none';
+		
+		   // 指定箇所のみ表示
+		   document.getElementById(tabname).style.display = 'block';
+		}
+		// -->
+	</script>
+</head>
+<body>
+	<div id="container">
+		<!-- サイドバー開始 -->
+		<div id="nav">
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/html/ktop.html"><font color="gray" size="3"><span class="pop">管理者TOP画面</span></font></a>
+			</span>
+			<br>
+			<br>
+
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/php/top.php"><font color="white" size="3"><span class="pop">利用者TOP画面</span></font></a>
+			</span>
+			<br>
+			<br>
+
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="ここにリンク先"><font color="white" size="3"><span class="pop">お問い合わせ</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="ここにリンク先"><font color="white"><span class="pop">よくある質問</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/html/kevent.html"><font color="white"><span class="pop">イベント情報</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/html/kjukyo.html"><font color="white"><span class="pop">住居情報</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/html/kkoukyou.html"><font color="white"><span class="pop">公共施設情報</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/html/kseikatu.html"><font color="white"><span class="pop">生活施設情報</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/html/kmoney.html"><font color="white"><span class="pop">金融機関情報</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/html/kkoutuu.html"><font color="white"><span class="pop">交通機関情報</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/php/logout.php"><font color="white"><span class="pop">ログアウト</span></font></a>
+			</span>
+			<br>
+			<br>
+		</div>
+		<!-- サイドバー終了 -->
+
+		<div id="content">
+
+			<div class="tabbox">
+				<p class="tabs">
+					<a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false;">バス</a>
+					<a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); return false;">汽車</a>
+				</p>
+				<div id="tab1" class="tab">
+					<p>
+					<!-- ここに中身を記述 -->
+					<!-- 路線図の表示 -->
+					<!-- ロゴにて表示テスト -->
+						<div align="center">
+							<img src="/picture/bus.gif" width="720px" height="540px" alt="路線図">
+							<!-- 時刻表ボタンクリックで時刻表のポップアップ表示 -->
+							<!-- 時刻表の画像の大きさに合わせて今後サイズは変更 -->
+							<!-- とりあえず南国市役所で動作確認 -->
+							<input name="openWin" type="button" value="時刻表" onClick="window.open('bus_time.png','','scrollbars=yes,width=933,height=1855,');">
+						</div>
+						<br>
+						<div align="right">
+						<!-- 画像変更ボタン -->
+							<tr>
+								<td colspan="2"><input type="button" value="路線図の変更"></td>
+							</tr>
+							<!-- 画像変更ボタン -->
+							<tr>
+								<td colspan="2"><input type="button" value="時刻表の変更"></td>
+							</tr>
+						</div>
+					</p>
+				</div>
+			
+				<form action="train.php" method="post">
+					<div id="tab2" class="tab">
+						<p>
+						<!-- ここに中身を記述 -->
+						<!-- 路線図の表示 -->
+						<!-- ロゴにて表示テスト -->
+							<div align="center">
+								<img src="no_image.png" width="700px" height="300px" alt="サンプル">
+							<!-- 画像変更ボタン -->
+									<tr>
+										<td colspan="2"><input type="button" value="路線図の変更"></td>
+									</tr>
+							
+							<!-- 時刻検索 -->
+									<h3>
+										<table>
+											<tr>
+												<td>出発駅</td>
+											<td>
+												<form>
+													<select name="start_station">
+														<option value="高知" selected>高知</option>
+														<option value="薊野">薊野</option>
+														<option value="土佐一宮">土佐一宮</option>
+														<option value="布師田">布師田</option>
+														<option value="土佐大津">土佐大津</option>
+														<option value="後免">後免</option>
+														<option value="土佐長岡">土佐長岡</option>
+														<option value="山田西町">山田西町</option>
+														<option value="土佐山田">土佐山田</option>
+														<option value="後免町">後免町</option>
+														<option value="立田">立田</option>
+														<option value="のいち">のいち</option>
+													</select>
+												</form>
+											</td>
+											<td>～</td>
+											<td>到着駅</td>
+											<td>
+												<form>
+													<select name="end_station">
+														<option value="高知" selected>高知</option>
+														<option value="薊野">薊野</option>
+														<option value="土佐一宮">土佐一宮</option>
+														<option value="布師田">布師田</option>
+														<option value="土佐大津">土佐大津</option>
+														<option value="後免">後免</option>
+														<option value="土佐長岡">土佐長岡</option>
+														<option value="山田西町">山田西町</option>
+														<option value="土佐山田">土佐山田</option>
+														<option value="後免町">後免町</option>
+														<option value="立田">立田</option>
+														<option value="のいち">のいち</option>
+													</select>
+												</form>
+											</td>
+										</tr>
+									</table>
+									<br>
+									<!-- 検索ボタン -->
+									<!-- onclickでデータベースの呼び出し及び検索結果の表示 -->
+									<input type="button" name="検索ボタン" value="検索" onclick="location.href=''" >
+								</h3>							
+								<br>							
+								<!-- 検索結果の表示(検索ボタンの下側) -->
+								<!-- 出発駅と到着駅が正当に入力されたら表示 -->
+								<!-- 以下表示例 -->
+								<div class="train">
+									表示例：<br>
+									<h3>○○駅から××駅までの運賃は</h3>
+									<h2>△△△円</h2>
+									<h3>次の○○駅から××駅方面の出発時刻は＊＊：＊＊です。</h3>
+								</div>
+							</div>
+						</p>
+						<div align="right">
+					<!-- 編集ボタン -->
+							<tr>
+								<td colspan="2"><input type="button" value="駅の追加"></td>
+							</tr>
+					<!-- 編集ボタン -->
+							<tr>
+								<td colspan="2"><input type="button" value="出発時刻の変更"></td>
+							</tr>
+					<!-- 編集ボタン -->
+							<tr>
+								<td colspan="2"><input type="button" value="運賃の変更"></td>
+							</tr>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		<!-- // デフォルトのタブを選択
+			ChangeTab('tab1');
+			// -->
+	</script>
+</body>
+</html>

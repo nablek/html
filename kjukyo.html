@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="kanri.css">
+	<title>住居情報編集</title>
+</head>
+<body>
+</head>
+<body>
+	<!-- コンテナ開始 -->
+	<div id="container">
+
+
+<!-- サイドバー開始 -->
+<div id="nav">
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/html/ktop.html"><font color="gray" size="3"><span class="pop">管理者TOP画面</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/php/top.php"><font color="white" size="3"><span class="pop">利用者TOP画面</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="ここにリンク先"><font color="white" size="3"><span class="pop">お問い合わせ</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="ここにリンク先"><font color="white"><span class="pop">よくある質問</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/html/kevent.html"><font color="white"><span class="pop">イベント情報</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/html/kjukyo.html"><font color="white"><span class="pop">住居情報</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/html/kkoukyou.html"><font color="white"><span class="pop">公共施設情報</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/html/kseikatu.html"><font color="white"><span class="pop">生活施設情報</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/html/kmoney.html"><font color="white"><span class="pop">金融機関情報</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/html/kkoutuu.html"><font color="white"><span class="pop">交通機関情報</span></font></a>
+</span>
+<br>
+<br>
+
+<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+<a href="/php/logout.php"><font color="white"><span class="pop">ログアウト</span></font></a>
+</span>
+<br>
+<br>
+</div>
+<!-- サイドバー終了 -->
+
+		<!-- メインカラム開始 -->
+		<div id="content">
+			<div id="site-box">
+				<div id ="a-box">
+					<!-- データテーブル（地域情報テーブル）のデータ（カテゴリが住居情報に該当するもの）を取得して基本情報の掲載 -->
+					<h2 id="lineA">あ不動産</h2>
+					<div id="b-box">
+						<img src="no_image.png" width="200px" height="200px" alt="代替テキスト"><br>
+					</div>
+
+					<div id="b-box">
+						<ul>
+							<li>住所</li>
+							<li>電話番号</li>
+							<li>営業時間</li>
+							<li>定休日</li>
+							<li>URL</li>
+						</ul>
+						<br>
+					<!-- 編集ボタン -->
+						<tr>
+							<td colspan="2"><input type="button" value="編集"></td>
+						</tr>
+
+						<!-- 削除ボタン -->
+						<!-- phpの方でデータベースから削除おなしゃす -->
+						<tr>
+							<td colspan="2"><input type="button" value="削除"></td>
+						</tr>
+					</div>
+				</div>
+
+				<!-- データテーブル（地域情報テーブル）のデータ（カテゴリが住居情報に該当するもの）を取得しておすすめ物件の掲載 -->
+				<h2>おすすめ物件</h2>
+				<div id="b-box">
+					<h3>物件名</h3>
+					<ul>
+						<li>場所（住所）</li>
+						<li>部屋の広さ</li>
+						<li>家賃</li>
+						<li>駅から徒歩○分</li>
+					</ul>
+					<!-- 編集ボタン -->
+					<tr>
+						<td colspan="2"><input type="button" value="編集"></td>
+					</tr>
+					<!-- 削除ボタン -->
+					<!-- phpの方でデータベースから削除おなしゃす -->
+					<tr>
+						<td colspan="2"><input type="button" value="削除"></td>
+					</tr>
+				</div>
+				<img src="no_image.png" width="200px" height="200px" alt="代替テキスト">
+			</div>
+
+			<br>
+			<div id="site-box">
+				<div id ="a-box">
+					<!-- データテーブル（地域情報テーブル）のデータ（カテゴリが住居情報に該当するもの）を取得して基本情報の掲載 -->
+					<h2 id="lineA">あ不動産</h2>
+					<div id="b-box">
+						<img src="no_image.png" width="200px" height="200px" alt="代替テキスト"><br>
+					</div>
+
+					<div id="b-box">
+						<ul>
+							<li>住所</li>
+							<li>電話番号</li>
+							<li>営業時間</li>
+							<li>定休日</li>
+							<li>URL</li>
+						</ul>
+						<br>
+					<!-- 編集ボタン -->
+						<tr>
+							<td colspan="2"><input type="button" value="編集"></td>
+						</tr>
+
+						<!-- 削除ボタン -->
+						<!-- phpの方でデータベースから削除おなしゃす -->
+						<tr>
+							<td colspan="2"><input type="button" value="削除"></td>
+						</tr>
+					</div>
+				</div>
+
+				<!-- データテーブル（地域情報テーブル）のデータ（カテゴリが住居情報に該当するもの）を取得しておすすめ物件の掲載 -->
+				<h2>おすすめ物件</h2>
+				<div id="b-box">
+					<h3>物件名</h3>
+					<ul>
+						<li>場所（住所）</li>
+						<li>部屋の広さ</li>
+						<li>家賃</li>
+						<li>駅から徒歩○分</li>
+					</ul>
+					<!-- 編集ボタン -->
+					<tr>
+						<td colspan="2"><input type="button" value="編集"></td>
+					</tr>
+					<!-- 削除ボタン -->
+					<!-- phpの方でデータベースから削除おなしゃす -->
+					<tr>
+						<td colspan="2"><input type="button" value="削除"></td>
+					</tr>
+				</div>
+				<img src="no_image.png" width="200px" height="200px" alt="代替テキスト">
+			</div>
+
+			<br>
+		</div>
+		</div>		
+	</div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>金融機関情報編集</title>	
+	<link rel="stylesheet" type="text/css" href="kanri.css">
+	<link rel="stylesheet" type="text/css" href="money.css">
+	<script type="text/javascript">
+	<!--
+	function ChangeTab(tabname) {
+		// 全部消す
+		document.getElementById('tab1').style.display = 'none';
+		document.getElementById('tab2').style.display = 'none';
+
+		// 指定箇所のみ表示
+		document.getElementById(tabname).style.display = 'block';
+	}
+	// -->
+	</script>
+
+	<!-- 画像の位置を調整(相対位置指定) -->
+	<STYLE type="text/css">
+	.tp {
+		position: relative;
+		bottom: 60px;
+	
+	}
+	</STYLE>
+</head>
+<body>
+	<div id="container">
+	<!-- サイドバー開始 -->
+		<div id="nav">
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/html/ktop.html"><font color="gray" size="3"><span class="pop">管理者TOP画面</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/php/top.php"><font color="white" size="3"><span class="pop">利用者TOP画面</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="ここにリンク先"><font color="white" size="3"><span class="pop">お問い合わせ</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="ここにリンク先"><font color="white"><span class="pop">よくある質問</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/html/kevent.html"><font color="white"><span class="pop">イベント情報</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/html/kjukyo.html"><font color="white"><span class="pop">住居情報</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/html/kkoukyou.html"><font color="white"><span class="pop">公共施設情報</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/html/kseikatu.html"><font color="white"><span class="pop">生活施設情報</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/html/kmoney.html"><font color="white"><span class="pop">金融機関情報</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/html/kkoutuu.html"><font color="white"><span class="pop">交通機関情報</span></font></a>
+			</span>
+			<br>
+			<br>
+			
+			<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
+				<a href="/php/logout.php"><font color="white"><span class="pop">ログアウト</span></font></a>
+			</span>
+			<br>
+			<br>
+		</div>
+		<!-- サイドバー終了 -->
+
+		<!-- メインカラム開始 -->
+		<div id="content">
+		<!-- タブ部分 -->
+			<div class="tabbox">
+				<p class="tabs">
+					<a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false;">郵便局</a>
+					<a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); return false;">銀行</a>
+				</p>
+				<div id="tab1" class="tab">
+					<p><!-- ここに郵便局の中身を記述 -->
+						<ul style="border:1px solid black; width:600px; height:300px;">
+							<h2>郵便局土佐山田支店</h2>
+							<img src="tosapost.jpg"alt="写真"class="tp"width="240px"height="180px"align="right"hspace="50px" >
+							<li style="list-style:url(home78.png)">〒111-111 土佐山田</li>
+							<li style="list-style:url(old20.png)">000-000</li>
+							<li style="list-style:url(wall7.png)">窓口 9:00〜18:00<br>ATM 9:00〜18:00</li>
+							<br>
+							<li style="list-style:none">備考　</li>
+							<!-- 編集ボタン -->
+							<tr>
+								<td colspan="2"><input type="button" value="編集"></td>
+							</tr>
+							<!-- 削除ボタン -->
+							<!-- phpの方でデータベースから削除おなしゃす -->
+							<tr>
+								<td colspan="2"><input type="button" value="削除"></td>
+							</tr>
+						</ul>
+					</p>
+				</div>
+
+				<div id="tab2" class="tab">
+					<p><!-- ここに銀行の中身を記述 -->
+						<ul style="border:1px solid black; width:600px; height:300px;">
+							<h2>郵便局土佐山田支店</h2>
+							<li style="list-style:url(home78.png)">〒111-111 土佐山田</li>
+							<li style="list-style:url(old20.png)">000-000</li>
+							<li style="list-style:url(wall7.png)">窓口 9:00〜18:00<br>ATM 9:00〜18:00</li>
+							<br>
+							<li style="list-style:none">備考　土佐山田駅から徒歩○分</li>
+							<!-- 編集ボタン -->
+							<tr>
+								<td colspan="2"><input type="button" value="編集"></td>
+							</tr>
+							<!-- 削除ボタン -->
+							<!-- phpの方でデータベースから削除おなしゃす -->
+							<tr>
+								<td colspan="2"><input type="button" value="削除"></td>
+							</tr>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		<!--
+		// デフォルトのタブを選択
+		ChangeTab('tab1');
+		// -->
+	</script>
+</body>
+</html>
