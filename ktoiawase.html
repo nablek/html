@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>お問い合わせ</title>
-	<link rel="stylesheet" type="text/css" href="ktoiawase.css" />
+	<link rel="stylesheet" type="text/css" href="toiawase.css" />
 	
 	<script type="text/javascript">
 <!--
@@ -18,34 +18,6 @@ function ChangeTab(tabname) {
 }
 // -->
 
-<!-- //ポップアップの処理
-(function($){
-	$(function(){
-	    $(document)
-	        .on('click', '.popup_btn', function(){
-	            var $popup = $((this).attr('href'));
-
-	            // ポップアップの幅と高さからmarginを計算する
-	            var mT = ($popup.outerHeight() / 2) * (-1) + 'px';
-	            var mL = ($popup.outerWidth() / 2) * (-1) + 'px';
-
-	            // marginを設定して表示
-	            $('.popup').hide();
-	            $popup.css({
-	                'margin-top': mT,
-	                'margin-left': mL
-	            }).show();
-	            $('#overlay').show();
-
-	            return false;
-	        })
-	        .on('click', '.close_btn, #overlay', function(){
-	            $('.popup, #overlay').hide();
-	            return false;
-	        });
-	});
-	})(jQuery);
--->
 </script>
 </head>
 
@@ -83,8 +55,8 @@ function ChangeTab(tabname) {
       <!-- ここに中身を記述 -->
       <ul>
       <li>利用者ID表示</ll>
-      <li>お問い合わせの内容をテキスト一部表示</li>
-      <a href="#popup1" class="popup_btn">全文を見る</a>
+      <li style="list-style:none;">お問い合わせの内容をテキスト全て表示</li>
+     
       <!-- 削除ボタン -->
 			<!-- phpの方でデータベースから削除おなしゃす -->
 			<tr>
@@ -92,33 +64,17 @@ function ChangeTab(tabname) {
 			</tr>
       </ul>
       
-      <!-- ポッピアップの内容(送られてきた内容の全文) -->
-      <div id="popup1" class="popup">
-<div class="popup_inner">
-<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-<div>
-<a href="#close_btn" class="close_btn">閉じる</a>
-
-</div>
-</div>
-</div>
-<div id="overlay"></div>
       
       </p>
-      
-   </div>
+ </div>
    
    <div id="tab2" class="tab">
       <p>
       <!-- ここに中身を記述 -->
       <ul>
       <li>利用者ID表示</ll>
-      <li>お問い合わせの内容をテキスト一部表示</li>
-       <a href="#popup1" class="popup_btn">全文を見る</a>
+      <li style="list-style:none;">お問い合わせの内容をテキスト全て表示</li>
+   
       <!-- 削除ボタン -->
 			<!-- phpの方でデータベースから削除おなしゃす -->
 			<tr>
@@ -126,25 +82,16 @@ function ChangeTab(tabname) {
 			</tr>
        </ul>
        
-      <!-- ポッピアップの内容(送られてきた内容の全文) -->
-      <div id="popup1" class="popup">
-<div class="popup_inner">
-<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-<div>
-<a href="#close_btn" class="close_btn">閉じる</a>
-
-</div>
-</div>
-</div>
-<div id="overlay"></div>
 
       <ul>
       <li>利用者ID表示</li>
-      <li>お問い合わせの内容をテキスト一部表示</li>
+      <li style="list-style:none;">お問い合わせの内容をテキスト全て表示</li>
+      <!-- 削除ボタン -->
+			<!-- phpの方でデータベースから削除おなしゃす -->
+			<tr>
+			<td colspan="2"><input type="button" value="削除"></td>
+			</tr>
+			</ul>
       
    </div>
 
@@ -153,8 +100,8 @@ function ChangeTab(tabname) {
       <!-- ここに中身を記述 -->
       <ul>
       <li>利用者ID表示</ll>
-      <li>お問い合わせの内容をテキスト一部表示</li>
-      <a href="#popup1" class="popup_btn">全文を見る</a>
+      <li style="list-style:none;">お問い合わせの内容をテキスト全て表示</li>
+      
       <!-- 削除ボタン -->
 			<!-- phpの方でデータベースから削除おなしゃす -->
 			<tr>
@@ -162,25 +109,14 @@ function ChangeTab(tabname) {
 			</tr>
       </ul>
       
-      <!-- ポッピアップの内容(送られてきた内容の全文) -->
-      <div id="popup1" class="popup">
-<div class="popup_inner">
-<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-<div>
-<a href="#close_btn" class="close_btn">閉じる</a>
-
-</div>
-</div>
-</div>
-<div id="overlay"></div>
-      
       <ul>
       <li>利用者ID表示</li>
-      <li>お問い合わせの内容をテキスト一部表示</li>
+      <li style="list-style:none;">お問い合わせの内容をテキスト全て表示</li>
+      <!-- 削除ボタン -->
+			<!-- phpの方でデータベースから削除おなしゃす -->
+			<tr>
+			<td colspan="2"><input type="button" value="削除"></td>
+			</tr>
       
       </ul>
       </p>
