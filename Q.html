@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>お問い合わせ</title>
+	<link rel="stylesheet" type="text/css" href="toiawase.css" />
+	
+	<script type="text/javascript">
+<!--
+function ChangeTab(tabname) {
+   // 全部消す
+   document.getElementById('tab1').style.display = 'none';
+   document.getElementById('tab2').style.display = 'none';
+   document.getElementById('tab3').style.display = 'none';
+   
+   // 指定箇所のみ表示
+   document.getElementById(tabname).style.display = 'block';
+}
+// -->
+
+<!-- //ポップアップの処理
+(function($){
+	$(function(){
+	    $(document)
+	        .on('click', '.popup_btn', function(){
+	            var $popup = $((this).attr('href'));
+
+	            // ポップアップの幅と高さからmarginを計算する
+	            var mT = ($popup.outerHeight() / 2) * (-1) + 'px';
+	            var mL = ($popup.outerWidth() / 2) * (-1) + 'px';
+
+	            // marginを設定して表示
+	            $('.popup').hide();
+	            $popup.css({
+	                'margin-top': mT,
+	                'margin-left': mL
+	            }).show();
+	            $('#overlay').show();
+
+	            return false;
+	        })
+	        .on('click', '.close_btn, #overlay', function(){
+	            $('.popup, #overlay').hide();
+	            return false;
+	        });
+	});
+	})(jQuery);
+-->
+</script>
+</head>
+
+<body>
+<!-- コンテナ開始 -->
+<div id="container">
+
+<!-- サイドバー開始 サイドバーは受信数を表示させるだけ.クリックしても意味なし-->
+<div id="nav">
+<font color="black" size="3"><span class="pop">全受信</span></font><!-- この文字の横に受信数を表示させたい -->
+<br>
+<br>
+
+<font color="black"><span class="pop">システム</span></font>
+<br>
+<br>
+
+<font color="black" size="3"><span class="pop">イベント</span></font>
+
+
+</div><!-- サイド終了 -->
+
+<!-- メインカラム開始  -->
+<div id="content">
+
+<!-- タブ表示 -->
+<div class="tabbox">
+   <p class="tabs">
+      <a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false;">全受信</a>
+      <a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); return false;">システム</a>
+      <a href="#tab3" class="tab3" onclick="ChangeTab('tab3'); return false;">イベント</a>
+   </p>
+   <div id="tab1" class="tab">
+      <p>
+      <!-- ここに中身を記述 -->
+      <ul>
+      <li>利用者ID表示</ll>
+      <li>お問い合わせの内容をテキスト一部表示</li>
+      <a href="#popup1" class="popup_btn">全文を見る</a>
+      <!-- 削除ボタン -->
+			<!-- phpの方でデータベースから削除おなしゃす -->
+			<tr>
+			<td colspan="2"><input type="button" value="削除"></td>
+			</tr>
+      </ul>
+      
+      <!-- ポッピアップの内容(送られてきた内容の全文) -->
+      <div id="popup1" class="popup">
+<div class="popup_inner">
+<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+<div>
+<a href="#close_btn" class="close_btn">閉じる</a>
+
+</div>
+</div>
+</div>
+<div id="overlay"></div>
+      
+      </p>
+      
+   </div>
+   
+   <div id="tab2" class="tab">
+      <p>
+      <!-- ここに中身を記述 -->
+      <ul>
+      <li>利用者ID表示</ll>
+      <li>お問い合わせの内容をテキスト一部表示</li>
+       <a href="#popup1" class="popup_btn">全文を見る</a>
+      <!-- 削除ボタン -->
+			<!-- phpの方でデータベースから削除おなしゃす -->
+			<tr>
+			<td colspan="2"><input type="button" value="削除"></td>
+			</tr>
+       </ul>
+       
+      <!-- ポッピアップの内容(送られてきた内容の全文) -->
+      <div id="popup1" class="popup">
+<div class="popup_inner">
+<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+<div>
+<a href="#close_btn" class="close_btn">閉じる</a>
+
+</div>
+</div>
+</div>
+<div id="overlay"></div>
+
+      <ul>
+      <li>利用者ID表示</li>
+      <li>お問い合わせの内容をテキスト一部表示</li>
+      
+   </div>
+
+<div id="tab3" class="tab">
+      <p>
+      <!-- ここに中身を記述 -->
+      <ul>
+      <li>利用者ID表示</ll>
+      <li>お問い合わせの内容をテキスト一部表示</li>
+      <a href="#popup1" class="popup_btn">全文を見る</a>
+      <!-- 削除ボタン -->
+			<!-- phpの方でデータベースから削除おなしゃす -->
+			<tr>
+			<td colspan="2"><input type="button" value="削除"></td>
+			</tr>
+      </ul>
+      
+      <!-- ポッピアップの内容(送られてきた内容の全文) -->
+      <div id="popup1" class="popup">
+<div class="popup_inner">
+<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+<div>
+<a href="#close_btn" class="close_btn">閉じる</a>
+
+</div>
+</div>
+</div>
+<div id="overlay"></div>
+      
+      <ul>
+      <li>利用者ID表示</li>
+      <li>お問い合わせの内容をテキスト一部表示</li>
+      
+      </ul>
+      </p>
+   </div>
+
+</div><!-- タブ表示終了 -->
+
+
+</div><!-- メインカラム終了 -->
+
+
+
+
+
+</div>
+
+<script type="text/javascript"><!--
+  // デフォルトのタブを選択
+  ChangeTab('tab1');
+// --></script>
+
+</body>
+</html>
