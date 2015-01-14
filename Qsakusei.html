@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="Shift_JIS">
+<title>新規作成</title>
+</head>
+<body>
+<!-- コンテナ開始 -->
+<div id="container">
+
+<!-- メインカラム開始  -->
+<div id="content">
+<div align="center">
+		<div id="header">
+			<h1>新規作成</h1>
+		</div>
+		<!-- mail.phpはphpファイルができ次第対応するモノに変更してちょ -->
+		<form method="post" action="mail.php">
+			<table>
+			<!-- 質問タイトル入力欄 -->
+				<tr>
+					<th>タイトル</th>
+					<td><input type="text" name="event_name" size="30"></td>
+				</tr>
+
+
+			<!-- 答え入力欄 -->
+				<tr>
+					<th>答え</th>
+					<td><textarea rows="10" cols="50" name="content"></textarea></td>
+				</tr>
+			</table>
+
+			
+		<!-- 送信ボタン -->
+		<!-- データベースに書き込みを行うことができればsousin.htmlに -->
+		<!-- データベースに書き込みを行うことができなければerror.htmlに遷移 -->
+			<input type="submit" name="送信ボタン" value="上記の内容を掲載" onclick="location.href='/html/sosin.html'">
+		
+		<div id="footer">
+			<a href="Q.html">戻る</a>
+		</div>
+	</div>
+
+</div>
+
+
+</div>
+
+
+</body>
+</html>
