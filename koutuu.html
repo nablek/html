@@ -24,17 +24,24 @@ function ChangeTab(tabname) {
 		<a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); return false;">汽車</a>
 	</p>
 	<div id="tab1" class="tab">
-		<p>
+	<p>
 		<!-- ここに中身を記述 -->
 		<!-- 路線図の表示 -->
-		<!-- ロゴにて表示テスト -->
-			<div align="center">
-				<img src="/picture/bus.gif" width="720px" height="540px" alt="路線図">
+		<div id="toden" style="float:left">
+		<h2>土佐電鉄</h2>
+				<img src="/picture/toden.gif" alt="路線図">
+				</div>
+				<div id="jr" style="float:right">
+		<h2>JR</h2>
+				<img src="/picture/jr_bus.gif" alt="路線図">
+				</div>
+				
 				<br>
 				<!-- 時刻表ボタンクリックで時刻表のポップアップ表示 -->
 				<!-- 時刻表の画像の大きさに合わせて今後サイズは変更 -->
-				<!-- とりあえず南国市役所で動作確認 -->
-				<input name="openWin" type="button" value="時刻表" onClick="window.open('bus_time.png','','scrollbars=yes,width=933,height=1855,');">
+				
+				<div align="center">
+				<input name="openWin" type="button" value="時刻表" onClick="window.open('bus_time.gif','','scrollbars=yes,width=933,height=1855,');">
 			</div>
 		</p>
 	</div>
