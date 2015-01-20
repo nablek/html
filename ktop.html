@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>管理者</title>
-<link rel="stylesheet" type="text/css" href="ktop.css">
+<link rel="stylesheet" type="text/css" href="/css/ktop.css">
 </head>
 <body>
 <!-- コンテナ開始 -->
@@ -12,86 +12,78 @@
 
 <!-- ヘッダ開始 -->
 <div id="header">
-<ul style="border:1px solid black; width:auto; height:auto;">
-<li style="list-style:none;">アカウント情報</li>
-<li style="list-style:none;">メール受信数を表示しますん</li>
-</ul>
+<div align="left">
+<h1><span class="pop">KUTARC管理者専用</span></h1>
+</div>
 </div>
 <!-- ヘッダ終了 -->
 
 <!-- サイドバー開始 -->
 <div id="nav">
-<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
-<a href="/html/ktop.html"><font color="gray" size="3"><span class="pop">管理者TOP画面</span></font></a>
-</span>
-<br>
-<br>
+<div class="mail">
+メール受信数
+</div>
 
-<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
-<a href="/php/top.php"><font color="white" size="3"><span class="pop">利用者TOP画面</span></font></a>
-</span>
-<br>
-<br>
+<div class="rtop">
+<a href="/php/top.php"><font color="black">利用者TOP画面</font></a>
+</div>
 
-<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
-<a href="ここにリンク先"><font color="white" size="3"><span class="pop">お問い合わせ</span></font></a>
-</span>
-<br>
-<br>
-
-<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
-<a href="ここにリンク先"><font color="white"><span class="pop">よくある質問</span></font></a>
-</span>
-<br>
-<br>
-
-<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
-<a href="/html/kevent.html"><font color="white"><span class="pop">イベント情報</span></font></a>
-</span>
-<br>
-<br>
-
-<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
-<a href="/html/kjukyo.html"><font color="white"><span class="pop">住居情報</span></font></a>
-</span>
-<br>
-<br>
-
-<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
-<a href="/html/kkoukyou.html"><font color="white"><span class="pop">公共施設情報</span></font></a>
-</span>
-<br>
-<br>
-
-<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
-<a href="/html/kseikatu.html"><font color="white"><span class="pop">生活施設情報</span></font></a>
-</span>
-<br>
-<br>
-
-<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
-<a href="/html/kmoney.html"><font color="white"><span class="pop">金融機関情報</span></font></a>
-</span>
-<br>
-<br>
-
-<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
-<a href="/html/kkoutuu.html"><font color="white"><span class="pop">交通機関情報</span></font></a>
-</span>
-<br>
-<br>
-
-<span onmouseover="this.style.background='#33cc66'" onmouseout="this.style.background='#f2f2f2'">
-<a href="/php/logout.php"><font color="white"><span class="pop">ログアウト</span></font></a>
-</span>
-<br>
-<br>
+<div class="logout">
+<a href="/php/logout.php"><font color="black">ログアウト</font></a>
+</div>
 </div>
 <!-- サイドバー終了 -->
 
 <!-- メインカラム開始 -->
 <div id="content">
-<img src="graph.png" width=800px; height="500px;">
+
+<div class="jukyo" align="center">
+<a href="/html/kjyukyo.html"><font size="6"><span class="pop">住居情報</span></font></a>
+</div>
+<br>
+<br>
+
+<div class="koukyou" align="center">
+<a href="/html/kkoukyou.html"><font size="6"><span class="pop">公共施設情報</span></font></a>
+</div>
+<br>
+<br>
+
+<div class="seikatu" align="center">
+<a href="/html/kseikatu.html"><font size="6"><span class="pop">生活施設情報</span></font></a>
+</div>
+<br>
+<br>
+
+<div class="money" align="center">
+<a href="/html/kmoney.html"><font size="6"><span class="pop">金融機関情報</span></font></a>
+</div>
+<br>
+<br>
+
+<div class="koutuu" align="center">
+<a href="/html/kkoutuu.html"><font size="6"><span class="pop">交通機関情報</span></font></a>
+</div>
+<br>
+<br>
+
+<div class="event" align="center">
+<a href="/html/kevent.html"><font size="6"><span class="pop">イベント情報</span></font></a>
+</div>
+<br>
+<br>
+
+<div class="toi" align="center">
+<a href="/html/ktoiawase.html"><font size="6"><span class="pop">お問い合わせ</span></font></a>
+</div>
+<br>
+<br>
+
+<div class="q" align="center">
+<a href="/html/Q.html"><font size="6"><span class="pop">よくある質問</span></font></a>
+</div>
+<br>
+<br>
 
 </div>
 <!-- メインカラム終了 -->
